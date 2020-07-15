@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://hsjnb.com:3306/blog?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: admin
+    password: 0623173x
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+logging:
+  level:
+    root: info
+    com.hsjnb: debug
+  file:
+    name: log/blog-dev.log
+
+server:
+  port: 8080
