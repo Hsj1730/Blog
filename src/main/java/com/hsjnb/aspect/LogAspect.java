@@ -48,7 +48,7 @@ public class LogAspect {
         String ip = request.getRemoteAddr();
         String classMethod = joinPoint.getSignature().getDeclaringTypeName() + "." +joinPoint.getSignature().getName();
         Object[] args = joinPoint.getArgs();
-        RequestLog requestLog = new RequestLog(url,ip,classMethod,args);
+        RequestLog requestLog = new RequestLog(url, ip, classMethod, args);
         logger.info("Request : {}",requestLog);
     }
 
@@ -62,7 +62,7 @@ public class LogAspect {
         logger.info("Result : {}",result);
     }
 
-    private class RequestLog {
+    private static class RequestLog {
 
         private String url;
         private String ip;
@@ -79,10 +79,10 @@ public class LogAspect {
         @Override
         public String toString() {
             return "{" +
-                    "url='" + url + '\'' +
-                    ", ip='" + ip + '\'' +
-                    ", classMethod='" + classMethod + '\'' +
-                    ", args=" + Arrays.toString(args) +
+                    "url = '" + url + '\'' +
+                    ", ip = '" + ip + '\'' +
+                    ", classMethod = '" + classMethod + '\'' +
+                    ", args = " + Arrays.toString(args) +
                     '}';
         }
     }
