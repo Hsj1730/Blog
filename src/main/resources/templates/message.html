@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONESTAR-留言板</title>
+    <title>ONESTARの留言板</title>
     <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
@@ -17,6 +17,7 @@
                 <h2 class="ui olive header item" style="font-family: STSong,serif">BLOG</h2>
                 <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
                 <a href="#" class="active m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
@@ -25,11 +26,9 @@
                 <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
                     <form name="search" action="#" method="post" target="_blank">
-                        <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                            <label>
-                                <input style="color: white" type="text" name="query" placeholder="Search....">
-                                <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                            </label>
+                        <div class="ui icon input m-margin-tb-tiny">
+                            <input type="text" name="query" placeholder="Search....">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                         </div>
                     </form>
                 </div>
@@ -56,7 +55,7 @@
         <div class="ui container m-opacity box-shadow-max">
             <br>
             <!--新增留言-->
-            <div id="message-form" class="ui form">
+            <div id="message-form" class="ui form m-margin-top-bottom">
                 <input type="hidden" name="parentMessage.id" value="-1">
                 <!--留言区-->
                 <div class="field">
@@ -70,9 +69,7 @@
                         <div class="field m-mobile-wide m-margin-bottom-small">
                             <div class="ui left icon input">
                                 <i class="user icon"></i>
-                                <label>
-                                    <input type="text" name="nickname" placeholder="Id">
-                                </label>
+                                <input type="text" name="nickname" placeholder="Id">
                             </div>
                         </div>
                     </div>
@@ -81,9 +78,7 @@
                         <div class="field m-mobile-wide m-margin-bottom-small">
                             <div class="ui left icon input">
                                 <i class="mail icon"></i>
-                                <label>
-                                    <input type="text" name="email" placeholder="Email">
-                                </label>
+                                <input type="text" name="email" placeholder="Email">
                             </div>
                         </div>
                     </div>
@@ -95,14 +90,14 @@
                 </div>
             </div>
             <!--留言区-->
-            <div class="ui bottom attached m-margin-top">
+            <div class="ui bottom attached m-margin-bottom-top">
                 <div id="message-container" class="ui teal segment">
                     <div>
                         <div class="ui threaded comments" style="max-width: 100%;">
                             <h3 class="ui dividing header">留言</h3>
                             <div class="comment">
                                 <a class="avatar">
-                                    <img src="../static/images/avatar.png" alt="">
+                                    <img src="../static/images/avatar.png" th:src="@{/images/avatar.png}" alt="">
                                 </a>
                                 <div class="content">
                                     <a class="author">
@@ -122,7 +117,7 @@
                                 <div class="comments">
                                     <div class="comment">
                                         <a class="avatar">
-                                            <img src="../static/images/avatar.png" alt="">
+                                            <img src="../static/images/avatar.png" th:src="@{/images/avatar.png}" alt="">
                                         </a>
                                         <div class="content">
                                             <a class="author">
@@ -148,11 +143,6 @@
             </div>
             <br>
         </div>
-    </div>
-
-    <!--置顶图标-->
-    <div class="m-padded m-fixed m-right-bottom">
-        <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
     </div>
 
     <!--底部栏-->

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ONESTAR-照片墙</title>
+    <title>ONESTARの照片墙</title>
     <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
@@ -17,6 +17,7 @@
                 <h2 class="ui olive header item" style="font-family: STSong,serif">BLOG</h2>
                 <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
@@ -25,11 +26,9 @@
                 <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
                     <form name="search" action="#" method="post" target="_blank">
-                        <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                            <label>
-                                <input style="color: white" type="text" name="query" placeholder="Search....">
-                                <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                            </label>
+                        <div class="ui icon input m-margin-tb-tiny">
+                            <input type="text" name="query" placeholder="Search....">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                         </div>
                     </form>
                 </div>
@@ -57,8 +56,8 @@
         <article class="thumb">
             <div class="ma5-gallery">
                 <div class="rthumbnail">
-                    <a href="../static/images/backimg1.jpg">
-                        <img class="picture-zmki_px" src="../static/images/backimg1.jpg" alt="">
+                    <a href="../static/images/backimg1.jpg" th:href="@{/images/backimg1.jpg}">
+                        <img class="picture-zmki_px" src="../static/images/backimg1.jpg" th:src="@{/images/backimg1.jpg}" alt="">
                     </a>
                     <div class="m-picture-text">起风了</div>
                     <div  class="rcaption">
@@ -70,11 +69,6 @@
             </div>
         </article>
 
-    </div>
-
-    <!--置顶图标-->
-    <div class="m-padded m-fixed m-right-bottom">
-        <a href="#" class="ui teal icon button"><i class="chevron up icon"></i> </a>
     </div>
 
     <!--底部栏-->

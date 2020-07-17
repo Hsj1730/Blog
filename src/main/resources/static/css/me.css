@@ -531,3 +531,15 @@ body{
     background-size: 100% 100%;
 }
 
+.m-margin-top-bottom {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+    margin-bottom: 1em !important;
+}
+
+.m-margin-bottom-top {
+    margin-left: 1em !important;
+    margin-right: 1em !important;
+    margin-top: 1em !important;
+}
+

@@ -22,6 +22,7 @@
                 <h2 class="ui olive header item" style="font-family: STSong,serif">BLOG</h2>
                 <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clock icon"></i>时间轴</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐盒</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="book icon"></i>留言板</a>
@@ -30,11 +31,9 @@
                 <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
                     <form name="search" action="#" method="post" target="_blank">
-                        <div class="ui icon transparent input m-margin-tb-tiny" style="color: white">
-                            <label>
-                                <input style="color: white" type="text" name="query" placeholder="Search....">
-                                <i onclick="document.forms['search'].submit()" class="search link icon"></i>
-                            </label>
+                        <div class="ui icon input m-margin-tb-tiny">
+                            <input type="text" name="query" placeholder="Search....">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                         </div>
                     </form>
                 </div>
@@ -47,7 +46,7 @@
 
     <!--顶部图片-->
     <div class="m-bg-type_outer" style="width: 100%;height: 50%">
-        <img src="../static/images/bg.jpg" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
+        <img src="../static/images/bg.jpg" th:src="@{/images/bg.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
         <div class="m-bg-class_cover">
             <div class="ui container" style="position: relative ;bottom: -540px;">
                 <h2 class="m-font-size-title-large" align="center">Markdown编辑</h2>
@@ -88,7 +87,7 @@
             <div class="ui attached padded segment">
 
                 <!--中间主要内容部分-->
-                <div id="content" class="typo  typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
+                <div id="content" class="typo typo-selection js-toc-content m-padded-lr-responsive m-padded-tb-large">
                     <h2 id="section1">一、关于 <i class="serif">Typo.css</i></h2>
                     <pre><code class="language-css">p { color: red }</code></pre>
                     <pre><code class="language-css">p { color: red }</code></pre>
@@ -99,63 +98,63 @@
                     <p><strong><i class="serif">Typo.css</i> 测试于如下平台：</strong></p>
                     <table class="ui table" summary="Typo.css 的测试平台列表">
                         <thead>
-                            <tr>
-                                <th>OS/浏览器</th>
-                                <th>Firefox</th>
-                                <th>Chrome</th>
-                                <th>Safari</th>
-                                <th>Opera</th>
-                                <th>IE9</th>
-                                <th>IE8</th>
-                                <th>IE7</th>
-                                <th>IE6</th>
-                            </tr>
+                        <tr>
+                            <th>OS/浏览器</th>
+                            <th>Firefox</th>
+                            <th>Chrome</th>
+                            <th>Safari</th>
+                            <th>Opera</th>
+                            <th>IE9</th>
+                            <th>IE8</th>
+                            <th>IE7</th>
+                            <th>IE6</th>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>OS X</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Win 7</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>-</td>
-                            </tr>
-                            <tr>
-                                <td>Win XP</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>-</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                            </tr>
-                            <tr>
-                                <td>Ubuntu</td>
-                                <td>✔</td>
-                                <td>✔</td>
-                                <td>-</td>
-                                <td>✔</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                                <td>-</td>
-                            </tr>
+                        <tr>
+                            <td>OS X</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Win 7</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>-</td>
+                        </tr>
+                        <tr>
+                            <td>Win XP</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>-</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                        </tr>
+                        <tr>
+                            <td>Ubuntu</td>
+                            <td>✔</td>
+                            <td>✔</td>
+                            <td>-</td>
+                            <td>✔</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                            <td>-</td>
+                        </tr>
                         </tbody>
                     </table>
                     <h4>中文排版的重点和难点</h4>
@@ -192,7 +191,7 @@
                     <p>孔子说：「学了又时常温习和练习，不是很愉快吗？有志同道合的人从远方来，不是很令人高兴的吗？人家不了解我，我也不怨恨、恼怒，不也是一个有德的君子吗？」 </p>
                     <h4>评析</h4>
                     <p>宋代著名学者<u class="typo-u">朱熹</u>对此章评价极高，说它是「入道之门，积德之基」。本章这三句话是人们非常熟悉的。历来的解释都是：学了以后，又时常温习和练习，不也高兴吗等等。三句话，一句一个意思，前后句子也没有什么连贯性。但也有人认为这样解释不符合原义，指出这里的「学」不是指学习，而是指学说或主张；「时」不能解为时常，而是时代或社会的意思，「习」不是温习，而是使用，引申为采用。而且，这三句话不是孤立的，而是前后相互连贯的。这三句的意思是：自己的学说，要是被社会采用了，那就太高兴了；退一步说，要是没有被社会所采用，可是很多朋友赞同<abbr
-                        title="张燕婴">我</abbr>的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？（见《齐鲁学刊》1986年第6期文）这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。
+                            title="张燕婴">我</abbr>的学说，纷纷到我这里来讨论问题，我也感到快乐；再退一步说，即使社会不采用，人们也不理解我，我也不怨恨，这样做，不也就是君子吗？（见《齐鲁学刊》1986年第6期文）这种解释可以自圆其说，而且也有一定的道理，供读者在理解本章内容时参考。
                     </p>
                     <p>此外，在对「人不知，而不愠」一句的解释中，也有人认为，「人不知」的后面没有宾语，人家不知道什么呢？当时因为孔子有说话的特定环境，他不需要说出知道什么，别人就可以理解了，却给后人留下一个谜。有人说，这一句是接上一句说的，从远方来的朋友向我求教，我告诉他，他还不懂，我却不怨恨。这样，「人不知」就是「人家不知道我所讲述的」了。这样的解释似乎有些牵强。</p>
                     <p>总之，本章提出以学习为乐事，做到人不知而不愠，反映出孔子学而不厌、诲人不倦、注重修养、严格要求自己的主张。这些思想主张在《论语》书中多处可见，有助于对第一章内容的深入了解。</p>
@@ -239,7 +238,7 @@
                     <hr/>
                     <p><abbr title="法国作家罗切福考尔德">La Racheforcauld</abbr> said:
                         <mark>"Few things are impossible in themselves; and it is often for want of will, rather than of means, that man fails
-                          to succeed".
+                            to succeed".
                         </mark>
                         You just need to follow the browser's behavior, and set a right <code>margin</code> to it。it will works nice as the
                         demo you're watching now. The following code is the best way to render typo in Chinese:
@@ -259,161 +258,164 @@ h5,h6{font-size:1em;}
 .typo p, .typo pre, .typo ul, .typo ol, .typo dl, .typo form, .typo hr {
     margin:1em 0 0.6em;
 }
-                    </code></pre>
+                        </code></pre>
                     <h3 id="section3">三、附录</h3>
                     <h5 id="appendix1">1、<i class="serif">Typo.css</i> 排版偏重点</h5>
                     <table class="ui table" summary="Typo.css 排版偏重点">
                         <thead>
-                            <tr>
-                                <th>类型</th>
+                        <tr>
+                            <th>类型</th>
                             <th>语义</th>
                             <th>标签</th>
                             <th>注意点</th>
-                            </tr>
+                        </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <th rowspan="15">基础标签</th>
-                                <td>标题</td>
-                                <td><code>h1</code> ～ <code>h6</code></td>
-                                <td>全局不强制大小，<code>.typo</code> 中标题与其对应的内容应紧贴，并且有相应的大小设置</td>
-                            </tr>
-                            <tr>
-                                <td>上、下标</td>
-                                <td><code>sup</code>/<code>sub</code></td>
-                                <td>保持与 MicroSoft Office Word 等程序的日常排版一致</td>
-                            </tr>
-                            <tr>
-                                <td>引用</td>
-                                <td><code>blockquote</code></td>
-                                <td>显示/嵌套样式</td>
-                            </tr>
-                            <tr>
-                                <td>缩写</td>
-                                <td><code>abbr</code></td>
-                                <td>是否都有下划线，鼠标 <code>hover</code> 是否为帮助手势</td>
-                            </tr>
-                            <tr>
-                                <td>分割线</td>
-                                <td><code>hr</code></td>
-                                <td>显示的 <code>padding</code> 和 <code>margin</code>正确</td>
-                            </tr>
-                            <tr>
-                                <td>列表</td>
-                                <td><code>ul</code>/<code>ol</code>/<code>dl</code></td>
-                                <td>在全局没有 <code>list-style</code>，在 .<code>typo</code> 中对齐正确</td>
-                            </tr>
-                            <tr>
-                                <td>定义列表</td>
-                                <td><code>dl</code></td>
-                                <td>全局 <code>padding</code> 和 <code>margin</code>为0， .<code>typo</code> 中对齐正确</td>
-                            </tr>
-                            <tr>
-                                <td>选项</td>
-                                <td><code>input[type=radio[, checkbox]]</code></td>
-                                <td>与其他 <code>form</code> 元素排版时是否居中</td>
-                            </tr>
-                            <tr>
-                                <td>斜体</td>
-                                <td><code>i</code></td>
-                                <td>只设置一种斜体，让 <code>em</code> 和 <code>cite</code> 显示为正体</td>
-                            </tr>
-                            <tr>
-                                <td>强调</td>
-                                <td><code>em</code></td>
-                                <td>在全局显示正体，在 <code>.typo</code> 中显示与 <code>b</code> 和 <code>strong</code> 的样式一致，为粗体</td>
-                            </tr>
-                            <tr>
-                                <td>加强</td>
-                                <td><code>strong/b</code></td>
-                                <td>显示为粗体</td>
-                            </tr>
-                            <tr>
-                                <td>标记</td>
-                                <td><code>mark</code></td>
-                                <td>类似荧光笔</td>
-                            </tr>
-                            <tr>
-                                <td>印刷</td>
-                                <td><code>small</code></td>
-                                <td>保持为正确字体的 80% 大小，颜色设置为浅灰色</td>
-                            </tr>
-                            <tr>
-                                <td>表格</td>
-                                <td><code>table</code></td>
-                                <td>全局不显示线条，在 <code>table</code> 中显示表格外框，并且表头有浅灰背景</td>
-                            </tr>
-                            <tr>
-                                <td>代码</td>
-                                <td><code>pre</code>/<code>code</code></td>
-                                <td>字体使用 <code>courier</code> 系字体，保持与 <code>serif</code> 有比较一致的显示效果</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="5">特殊符号</th>
-                                <td>着重号</td>
-                                <td><em class="typo-em">在文字下加点</em></td>
-                                <td>在支持 <code>:after</code> 和 <code>:before</code> 的浏览器可以做渐进增强实现</td>
-                            </tr>
-                            <tr>
-                                <td>专名号</td>
-                                <td><u>林建锋</u></td>
-                                <td>专名号，有下划线，使用 <code>u</code> 或都 <code>.typo-u</code> 类</td>
-                            </tr>
-                            <tr>
-                                <td>破折号</td>
-                                <td>——</td>
-                                <td>保持一划，而非两划</td>
-                            </tr>
-                            <tr>
-                                <td>人民币</td>
-                                <td>&yen;</td>
-                                <td>使用两平等线的符号，或者 HTML 实体符号 <code>&amp;yen;</code></td>
-                            </tr>
-                            <tr>
-                                <td>删除符</td>
-                                <td>
-                                    <del>已删除（deleted）</del>
-                                </td>
-                                <td>一致化各浏览器显示，中英混排正确</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="3">加强类</th>
-                                <td>专名号</td>
-                                <td><code>.typo-u</code></td>
-                                <td>由于 <code>u</code> 被 HTML4 放弃，在向后兼容上推荐使用 <code>.typo-u</code></td>
-                            </tr>
-                            <tr>
-                                <td>着重符</td>
-                                <td><code>.typo-em</code></td>
-                                <td>利用 <code>:after</code> 和 <code>:before</code> 实现着重符</td>
-                            </tr>
-                            <tr>
-                                <td>清除浮动</td>
-                                <td><code>.clearfix</code></td>
-                                <td>与一般 CSS Reset 保持一对致 API</td>
-                            </tr>
-                            <tr>
-                                <th rowspan="5">注意点</th>
-                                <td colspan="3">（1）中英文混排行高/行距</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">（2）上下标在 IE 中显示效果</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">（3）块/段落分割空白是否符合设计原则</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">（4）input 多余空间问题</td>
-                            </tr>
-                            <tr>
-                                <td colspan="3">（5）默认字体色彩，目前采用 <code>#333</code> 在各种浏览显示比较好</td>
-                            </tr>
+                        <tr>
+                            <th rowspan="15">基础标签</th>
+                            <td>标题</td>
+                            <td><code>h1</code> ～ <code>h6</code></td>
+                            <td>全局不强制大小，<code>.typo</code> 中标题与其对应的内容应紧贴，并且有相应的大小设置</td>
+                        </tr>
+                        <tr>
+                            <td>上、下标</td>
+                            <td><code>sup</code>/<code>sub</code></td>
+                            <td>保持与 MicroSoft Office Word 等程序的日常排版一致</td>
+                        </tr>
+                        <tr>
+                            <td>引用</td>
+                            <td><code>blockquote</code></td>
+                            <td>显示/嵌套样式</td>
+                        </tr>
+                        <tr>
+                            <td>缩写</td>
+                            <td><code>abbr</code></td>
+                            <td>是否都有下划线，鼠标 <code>hover</code> 是否为帮助手势</td>
+                        </tr>
+                        <tr>
+                            <td>分割线</td>
+                            <td><code>hr</code></td>
+                            <td>显示的 <code>padding</code> 和 <code>margin</code>正确</td>
+                        </tr>
+                        <tr>
+                            <td>列表</td>
+                            <td><code>ul</code>/<code>ol</code>/<code>dl</code></td>
+                            <td>在全局没有 <code>list-style</code>，在 .<code>typo</code> 中对齐正确</td>
+                        </tr>
+                        <tr>
+                            <td>定义列表</td>
+                            <td><code>dl</code></td>
+                            <td>全局 <code>padding</code> 和 <code>margin</code>为0， .<code>typo</code> 中对齐正确</td>
+                        </tr>
+                        <tr>
+                            <td>选项</td>
+                            <td><code>input[type=radio[, checkbox]]</code></td>
+                            <td>与其他 <code>form</code> 元素排版时是否居中</td>
+                        </tr>
+                        <tr>
+                            <td>斜体</td>
+                            <td><code>i</code></td>
+                            <td>只设置一种斜体，让 <code>em</code> 和 <code>cite</code> 显示为正体</td>
+                        </tr>
+                        <tr>
+                            <td>强调</td>
+                            <td><code>em</code></td>
+                            <td>在全局显示正体，在 <code>.typo</code> 中显示与 <code>b</code> 和 <code>strong</code> 的样式一致，为粗体</td>
+                        </tr>
+                        <tr>
+                            <td>加强</td>
+                            <td><code>strong/b</code></td>
+                            <td>显示为粗体</td>
+                        </tr>
+                        <tr>
+                            <td>标记</td>
+                            <td><code>mark</code></td>
+                            <td>类似荧光笔</td>
+                        </tr>
+                        <tr>
+                            <td>印刷</td>
+                            <td><code>small</code></td>
+                            <td>保持为正确字体的 80% 大小，颜色设置为浅灰色</td>
+                        </tr>
+                        <tr>
+                            <td>表格</td>
+                            <td><code>table</code></td>
+                            <td>全局不显示线条，在 <code>table</code> 中显示表格外框，并且表头有浅灰背景</td>
+                        </tr>
+                        <tr>
+                            <td>代码</td>
+                            <td><code>pre</code>/<code>code</code></td>
+                            <td>字体使用 <code>courier</code> 系字体，保持与 <code>serif</code> 有比较一致的显示效果</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="5">特殊符号</th>
+                            <td>着重号</td>
+                            <td><em class="typo-em">在文字下加点</em></td>
+                            <td>在支持 <code>:after</code> 和 <code>:before</code> 的浏览器可以做渐进增强实现</td>
+                        </tr>
+                        <tr>
+                            <td>专名号</td>
+                            <td><u>林建锋</u></td>
+                            <td>专名号，有下划线，使用 <code>u</code> 或都 <code>.typo-u</code> 类</td>
+                        </tr>
+                        <tr>
+                            <td>破折号</td>
+                            <td>——</td>
+                            <td>保持一划，而非两划</td>
+                        </tr>
+                        <tr>
+                            <td>人民币</td>
+                            <td>&yen;</td>
+                            <td>使用两平等线的符号，或者 HTML 实体符号 <code>&amp;yen;</code></td>
+                        </tr>
+                        <tr>
+                            <td>删除符</td>
+                            <td>
+                                <del>已删除（deleted）</del>
+                            </td>
+                            <td>一致化各浏览器显示，中英混排正确</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="3">加强类</th>
+                            <td>专名号</td>
+                            <td><code>.typo-u</code></td>
+                            <td>由于 <code>u</code> 被 HTML4 放弃，在向后兼容上推荐使用 <code>.typo-u</code></td>
+                        </tr>
+                        <tr>
+                            <td>着重符</td>
+                            <td><code>.typo-em</code></td>
+                            <td>利用 <code>:after</code> 和 <code>:before</code> 实现着重符</td>
+                        </tr>
+                        <tr>
+                            <td>清除浮动</td>
+                            <td><code>.clearfix</code></td>
+                            <td>与一般 CSS Reset 保持一对致 API</td>
+                        </tr>
+                        <tr>
+                            <th rowspan="5">注意点</th>
+                            <td colspan="3">（1）中英文混排行高/行距</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">（2）上下标在 IE 中显示效果</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">（3）块/段落分割空白是否符合设计原则</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">（4）input 多余空间问题</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">（5）默认字体色彩，目前采用 <code>#333</code> 在各种浏览显示比较好</td>
+                        </tr>
                         </tbody>
                     </table>
                     <h5 id="appendix2">2、开源许可</h5>
                 </div>
                 <div class="ui horizontal divider">end</div>
-
+                <!-- 标签 -->
+                <div class="m-padded-lr-responsive">
+                    <div class="ui basic teal left pointing label">Markdown</div>
+                </div>
                 <!--赞赏-->
                 <div >
                     <div class="ui center aligned basic segment">
@@ -462,7 +464,7 @@ h5,h6{font-size:1em;}
                             <h3 class="ui dividing header">评论</h3>
                             <div class="comment">
                                 <a class="avatar">
-                                    <img src="../static/images/avatar.png" alt="">
+                                    <img src="../static/images/avatar.png" th:src="@{/images/avatar.png}" alt="">
                                 </a>
                                 <div class="content">
                                     <a class="author" >
@@ -484,7 +486,7 @@ h5,h6{font-size:1em;}
                                 <div class="comments">
                                     <div class="comment">
                                         <a class="avatar">
-                                            <img src="../static/images/avatar.png" alt="">
+                                            <img src="../static/images/avatar.png" th:src="@{/images/avatar.png}" alt="">
                                         </a>
                                         <div class="content">
                                             <a class="author" >
@@ -520,20 +522,16 @@ h5,h6{font-size:1em;}
                         <div class="field m-mobile-wide m-margin-bottom-small">
                             <div class="ui left icon input">
                                 <i class="user icon"></i>
-                                <label>
-                                    <input type="text" name="nickname" placeholder="姓名">
-                                </label>
+                                <input type="text" name="nickname" placeholder="姓名">
                             </div>
                         </div>
                         <div class="field m-mobile-wide m-margin-bottom-small">
                             <div class="ui left icon input">
                                 <i class="mail icon"></i>
-                                <label>
-                                    <input type="text" name="email" placeholder="邮箱">
-                                </label>
+                                <input type="text" name="email" placeholder="邮箱">
                             </div>
                         </div>
-                        <div class="field  m-margin-bottom-small m-mobile-wide">
+                        <div class="field m-margin-bottom-small m-mobile-wide">
                             <button id="commentpost-btn" type="button" class="ui teal button m-mobile-wide"><i class="edit icon"></i>发布</button>
                         </div>
                     </div>
@@ -542,8 +540,8 @@ h5,h6{font-size:1em;}
         </div>
     </div>
 
-    <div id="toolbar" class="m-padded m-fixed m-right-bottom" style="display: none">
-        <div class="ui vertical icon buttons ">
+    <div id="toobar" class="m-padded m-fixed m-right-bottom" style="display: none">
+        <div class="ui vertical icon buttons">
             <button type="button" class="ui toc teal button" >目录</button>
             <a href="#comment-container" class="ui teal button" >评论</a>
             <button class="ui wechat icon button"><i class="weixin icon"></i></button>
@@ -551,13 +549,12 @@ h5,h6{font-size:1em;}
         </div>
     </div>
 
-    <div class="ui toc-container flowing popup transition hidden" style="width: 250px!important;">
+    <div class="ui toc-container flowing popup transition hidden" style="width: 250px !important;">
         <ol class="js-toc"></ol>
     </div>
 
-    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden " style="width: 130px !important;"></div>
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden" style="width: 130px !important;"></div>
 
-    <!--底部栏-->
     <!--底部栏-->
     <footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
         <!--容器-->
@@ -621,13 +618,14 @@ h5,h6{font-size:1em;}
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-    <script src="../static/lib/scrollTo/jquery.scrollTo.min.js" th:src="@{/lib/scrollTo/jquery.scrollTo.min.js}"></script>
-    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+
     <script src="../static/lib/prism/prism.js" th:src="@{/lib/prism/prism.js}"></script>
     <script src="../static/lib/tocbot/tocbot.min.js" th:src="@{/lib/tocbot/tocbot.min.js}"></script>
+    <script src="../static/lib/qrcode/qrcode.min.js" th:src="@{/lib/qrcode/qrcode.min.js}"></script>
     <script src="../static/lib/waypoints/jquery.waypoints.min.js" th:src="@{/lib/waypoints/jquery.waypoints.min.js}"></script>
 
-    <script th:inline="javascript">
+    <script>
         // 运行时间统计
         function secondToDate(second) {
             if (!second) {
@@ -679,12 +677,9 @@ h5,h6{font-size:1em;}
         });
 
         tocbot.init({
-            // Where to render the table of contents.
             tocSelector: '.js-toc',
-            // Where to grab the headings to build the table of contents.
             contentSelector: '.js-toc-content',
-            // Which headings to grab inside of the contentSelector element.
-            headingSelector: 'h1, h2, h3',
+            headingSelector: 'h1, h2, h3'
         });
 
         $('.toc.button').popup({
@@ -698,34 +693,31 @@ h5,h6{font-size:1em;}
             position: 'left center'
         });
 
-        var serurl = /*[[#{blog.serurl}]]*/"127.0.0.1:8080";
-        var url = /*[[@{/blog/{id}(id=${blog.id})}]]*/"";
         var qrcode = new QRCode("qrcode", {
-            text: serurl+url,
+            text: "http://hsjnb.com",
             width: 110,
             height: 110,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
-        });
+        })
 
-        $('#toTop-button').click(function () {
+        $('#toTop-button').click(function() {
             $(window).scrollTo(0,500);
         });
 
-        var waypoint = new Waypoint({
+        new Waypoint({
             element: document.getElementById('waypoint'),
             handler: function(direction) {
-                if (direction === 'down') {
-                    $('#toolbar').show(100);
+                if (direction === "down") {
+                    $('#toobar').show(100);
                 } else {
-                    $('#toolbar').hide(500);
+                    $('#toobar').hide(500);
                 }
-                console.log('Scrolled to waypoint!  ' + direction);
             }
         });
 
-        //评论表单验证
+        // 评论表单验证
         $('.ui.form').form({
             fields: {
                 title: {
@@ -770,7 +762,6 @@ h5,h6{font-size:1em;}
             $("[name='parentComment.id']").val(-1);
             $("[name='content']").attr("placeholder", "请输入评论信息...");
         }
-
     </script>
 </body>
 </html>
