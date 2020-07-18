@@ -49,9 +49,9 @@
         <img src="../static/images/bg.jpg" th:src="@{/images/bg.jpg}" alt="" class="ui m-bg image" style="width: 100%;height: 100%">
         <div class="m-bg-class_cover">
             <div class="ui container" style="position: relative ;bottom: -540px;">
-                <h2 class="m-font-size-title-large" align="center">Markdown编辑</h2>
-                <div class="ui container" align="center">
-                    <div class="ui horizontal link list" align="center">
+                <h2 class="m-font-size-title-large" style="text-align:center;">Markdown编辑</h2>
+                <div class="ui container" style="text-align:center;">
+                    <div class="ui horizontal link list" style="text-align:center;">
                         <div class="item">
                             <div class="ui orange basic label" style="font-size: 7px">原创</div>
                         </div>
@@ -83,6 +83,14 @@
     <!--中间内容-->
     <div id="waypoint" class="m-margin- animated fadeIn">
         <div class="ui container m-opacity box-shadow-max">
+            <!--首图-->
+            <div class="ui center aligned  stackable m-container-mini m-opacity grid">
+                <div class="m-margin-tb-tiny eight wide column">
+                    <a href="#" class="class_outer" target="_blank">
+                        <img src="https://unsplash.it/800/450?image=1005" alt="" class="ui rounded image">
+                    </a>
+                </div>
+            </div>
             <!--内容-->
             <div class="ui attached padded segment">
 
@@ -693,14 +701,14 @@ h5,h6{font-size:1em;}
             position: 'left center'
         });
 
-        var qrcode = new QRCode("qrcode", {
+        new QRCode("qrcode", {
             text: "http://hsjnb.com",
             width: 110,
             height: 110,
             colorDark : "#000000",
             colorLight : "#ffffff",
             correctLevel : QRCode.CorrectLevel.H
-        })
+        });
 
         $('#toTop-button').click(function() {
             $(window).scrollTo(0,500);

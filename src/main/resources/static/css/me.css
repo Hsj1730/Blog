@@ -55,6 +55,10 @@ body{
     padding-bottom: 60px !important;
 }
 
+.m-padded-tb-hugex-a {
+    padding-top: 60px !important;
+}
+
 .m-padded-tb-massivex {
     padding-top: 6em !important;
     padding-bottom: 6em !important;

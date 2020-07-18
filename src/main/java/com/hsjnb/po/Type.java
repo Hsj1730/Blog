@@ -1,7 +1,8 @@
-package com.hsjnb.web;
+package com.hsjnb.po;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -16,65 +17,56 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/16 0:38
- * @description : 返回到首页的控制器
+ * @date : Created in 2020/07/18 14:01
+ * @description : Type实体类
  */
 
-@Controller
-public class IndexController {
+@Entity
+@Table(name = "t_type")
+public class Type {
 
-    @GetMapping("/about")
-    public String about() {
-        return "about";
+    @Id
+    @GeneratedValue
+    private Long id;
+
+    private String name;
+
+    @OneToMany(mappedBy = "type")
+    private List<Blog> blogs = new ArrayList<>();
+
+    public Type() {
+
     }
 
-    @GetMapping("/archives")
-    public String archives() {
-        return "archives";
+    public Long getId() {
+        return id;
     }
 
-    @GetMapping("/blog")
-    public String blog() {
-        return "blog";
+    public void setId(Long id) {
+        this.id = id;
     }
 
-    @GetMapping("/friends")
-    public String friends() {
-        return "friends";
+    public String getName() {
+        return name;
     }
 
-    @GetMapping("/")
-    public String index() {
-        return "index";
+    public void setName(String name) {
+        this.name = name;
     }
 
-    @GetMapping("/message")
-    public String message() {
-        return "message";
+    public List<Blog> getBlogs() {
+        return blogs;
     }
 
-    @GetMapping("/music")
-    public String music() {
-        return "music";
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 
-    @GetMapping("/picture")
-    public String picture() {
-        return "picture";
-    }
-
-    @GetMapping("/search")
-    public String search() {
-        return "search";
-    }
-
-    @GetMapping("/tags")
-    public String tags() {
-        return "tags";
-    }
-
-    @GetMapping("/types")
-    public String types() {
-        return "types";
+    @Override
+    public String toString() {
+        return "Type{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                '}';
     }
 }
