@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:replace="admin/_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>博客管理</title>
-    <link href="../../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
+    <link href="../../static/images/me.jpg" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/css/me.css">
 </head>
 <body>
 
     <!--导航-->
     <nav class="gird-header">
-        <div class="ui container">
+        <div class="ui container" th:replace="admin/_fragments :: menu(1)">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui olive header item" style="font-family: STSong,serif">管理后台</h2>
                 <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>博文管理</a>
@@ -25,7 +25,7 @@
                 <div class="right m-item m-mobile-hide menu">
                     <div class="ui dropdown item">
                         <div class="text">
-                            <img src="../../static/images/me.jpg" th:src="@{/images/me.jpg}" alt="" class="ui avatar image">
+                            <img src="../../static/images/me.jpg" alt="" class="ui avatar image">
                             <span>oneStar</span>
                         </div>
                         <i class="dropdown icon"></i>
@@ -147,7 +147,7 @@
     </div>
 
     <!--底部栏-->
-    <footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+    <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
         <!--容器-->
         <div class="ui center aligned container">
             <div class="ui inverted divided stackable grid stackable m-text-thin m-text-spaced">
@@ -165,7 +165,7 @@
                         <div class="item">
                             <!--公众号二维码-->
                             <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced" >关注公众号</div>
-                            <img src="../../static/images/WeChat-question.jpg" th:src="@{/images/WeChat-question.jpg}"  class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                            <img src="../../static/images/WeChat-question.jpg" class="ui m-margin-top rounded image" alt="" style="width: 110px">
                         </div>
                     </div>
                 </div>
@@ -175,7 +175,7 @@
                         <div class="item">
                             <!--QQ群二维码-->
                             <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced " >问题交流（QQ群）</div>
-                            <img src="../../static/images/qq-question.jpg" th:src="@{/images/qq-question.jpg}" class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                            <img src="../../static/images/qq-question.jpg" class="ui m-margin-top rounded image" alt="" style="width: 110px">
                         </div>
                     </div>
                 </div>

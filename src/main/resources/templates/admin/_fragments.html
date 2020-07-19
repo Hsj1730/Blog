@@ -1,36 +1,36 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head th:replace="admin/_fragments :: head(~{::title})">
+<head th:fragment="head(title)">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>博客管理</title>
-    <link href="../../static/images/me.jpg" rel="icon" type="image/x-ico">
+    <title th:replace="${title}"></title>
+    <link href="../../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/css/me.css">
+    <link rel="stylesheet" href="../../static/lib/editormd/css/editormd.min.css" th:href="@{/lib/editormd/css/editormd.min.css}">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
 </head>
 <body>
 
-    <!--导航-->
-    <nav class="gird-header">
-        <div class="ui container" th:replace="admin/_fragments :: menu(0)">
+    <div th:fragment="menu(n)">
+        <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui olive header item" style="font-family: STSong,serif">管理后台</h2>
-                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>博文管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友链管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="image icon"></i>相册管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>系统管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>博文管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="music icon"></i>音乐管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="pencil alternate icon"></i>友链管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="image icon"></i>相册管理</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==7} ? 'active'"><i class="info icon"></i>系统管理</a>
                 <div class="right m-item m-mobile-hide menu">
                     <div class="ui dropdown item">
                         <div class="text">
-                            <img src="../../static/images/me.jpg" alt="" class="ui avatar image">
+                            <img src="../../static/images/me.jpg" th:src="@{/images/me.jpg}" alt="" class="ui avatar image">
                             <span>oneStar</span>
                         </div>
                         <i class="dropdown icon"></i>
                         <div class="menu">
-                            <a href="#" th:href="@{/}" class="item">注销</a>
+                            <a href="#" th:href="@{/admin/logout}" class="item">注销</a>
                         </div>
                     </div>
                 </div>
@@ -39,26 +39,9 @@
         <div href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
             <i class="sidebar icon"></i>
         </div>
-    </nav>
-
-    <!--中间内容-->
-    <div class="m-padded-tb-massivex m-container-small">
-        <div class="ui container">
-            <div class="ui success large message m-opacity">
-                <p style="text-align:center;">念念不忘，必有回响</p>
-            </div>
-            <div class="ui success large message m-opacity">
-                <h3>Hi,</h3>
-                <p>黄思捷，欢迎登陆！</p>
-            </div>
-            <img src="../../static/images/backimg.jpg" th:src="@{/images/backimg.jpg}" alt="" class="ui rounded bordered fluid image m-opacity">
-        </div>
     </div>
 
-
-
-    <!--底部栏-->
-    <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+    <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
         <!--容器-->
         <div class="ui center aligned container">
             <div class="ui inverted divided stackable grid stackable m-text-thin m-text-spaced">
@@ -76,7 +59,7 @@
                         <div class="item">
                             <!--公众号二维码-->
                             <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced" >关注公众号</div>
-                            <img src="../../static/images/WeChat-question.jpg" class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                            <img src="../static/images/WeChat-question.jpg" th:src="@{/images/WeChat-question.jpg}"  class="ui m-margin-top rounded image" alt="" style="width: 110px">
                         </div>
                     </div>
                 </div>
@@ -86,7 +69,7 @@
                         <div class="item">
                             <!--QQ群二维码-->
                             <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced " >问题交流（QQ群）</div>
-                            <img src="../../static/images/qq-question.jpg" class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                            <img src="../static/images/qq-question.jpg" th:src="@{/images/qq-question.jpg}" class="ui m-margin-top rounded image" alt="" style="width: 110px">
                         </div>
                     </div>
                 </div>
@@ -117,58 +100,5 @@
             <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备19015593号</a>
         </div>
     </footer>
-
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
-
-    <script>
-        // 运行时间统计
-        function secondToDate(second) {
-            if (!second) {
-                return 0;
-            }
-            var time = [0, 0, 0, 0, 0];
-            if (second >= 365 * 24 * 3600) {
-                time[0] = parseInt(second / (365 * 24 * 3600));
-                second %= 365 * 24 * 3600;
-            }
-            if (second >= 24 * 3600) {
-                time[1] = parseInt(second / (24 * 3600));
-                second %= 24 * 3600;
-            }
-            if (second >= 3600) {
-                time[2] = parseInt(second / 3600);
-                second %= 3600;
-            }
-            if (second >= 60) {
-                time[3] = parseInt(second / 60);
-                second %= 60;
-            }
-            if (second > 0) {
-                time[4] = second;
-            }
-            return time;
-        }
-
-        function setTime() {
-            /*此处为网站的创建时间*/
-            var create_time = Math.round(new Date(Date.UTC(2020, 6, 13, 15, 29, 29)).getTime() / 1000);
-            var timestamp = Math.round(new Date().getTime() / 1000);
-            currentTime = secondToDate((timestamp - create_time));
-            currentTimeHtml = currentTime[0] + '年' + currentTime[1] + '天'
-                + currentTime[2] + '时' + currentTime[3] + '分' + currentTime[4]
-                + '秒';
-            document.getElementById("htmer_time").innerHTML = currentTimeHtml;
-        }
-        setInterval(setTime, 1000);
-
-        $('.menu.toggle').click(function () {
-            $('.m-item').toggleClass('m-mobile-hide');
-        });
-
-        $('.ui.dropdown').dropdown({
-            on : 'hover'
-        });
-    </script>
 </body>
 </html>

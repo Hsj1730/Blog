@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:fragment="head(title)">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title th:replace="${title}"></title>
     <link href="../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
     <link rel="stylesheet" href="../static/css/typo.css" th:href="@{/css/typo.css}">
@@ -12,8 +12,97 @@
     <link rel="stylesheet" href="../static/lib/tocbot/tocbot.css" th:href="@{/lib/tocbot/tocbot.css}">
     <link rel="stylesheet" href="../static/css/me.css" th:href="@{/css/me.css}">
     <link rel="stylesheet" href="../static/css/timeline.css" th:href="@{/css/timeline.css}">
+    <link rel="stylesheet" href="../static/lib/music/css/zplayer.min.css" th:href="@{/lib/music/css/zplayer.min.css}" />
+    <link rel="stylesheet" href="../static/lib/picture/css/jkresponsivegallery.css" th:href="@{/lib/picture/css/jkresponsivegallery.css}">
 </head>
 <body>
 
+    <div th:fragment="menu(n)">
+        <div class="ui container">
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui olive header item" style="font-family: STSong,serif;">BLOG</h2>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="music icon"></i>音乐盒</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==7} ? 'active'"><i class="pencil alternate icon"></i>友人帐</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==8} ? 'active'"><i class="image icon"></i>照片墙</a>
+                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
+                <div class="right m-item item m-mobile-hide">
+                    <form name="search" action="#" method="post" target="_blank">
+                        <div class="ui icon input m-margin-tb-tiny">
+                            <input type="text" name="query" placeholder="Search....">
+                            <i onclick="document.forms['search'].submit()" class="search link icon"></i>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+            <i class="sidebar icon"></i>
+        </div>
+    </div>
+
+    <footer th:fragment="footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+        <!--容器-->
+        <div class="ui center aligned container">
+            <div class="ui inverted divided stackable grid stackable m-text-thin m-text-spaced">
+                <div class="four wide column">
+                    <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced m-margin-top-max" >联系我</div>
+                    <div class="ui inverted link list">
+                        <div href="#" class="m-text-thin">Email：1830190904@qq.com</div>
+                        <div href="#" class="m-text-thin">微信号：hsj15736037060</div>
+                        <div href="#" class="m-text-thin">QQ：1830190904</div>
+                    </div>
+                </div>
+
+                <div class="four wide column" >
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <!--公众号二维码-->
+                            <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced" >关注公众号</div>
+                            <img src="../static/images/WeChat-question.jpg" th:src="@{/images/WeChat-question.jpg}"  class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="four wide column" >
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <!--QQ群二维码-->
+                            <div style="font-size: large;font-weight: bold" class="ui inverted m-text-thin m-text-spaced " >问题交流（QQ群）</div>
+                            <img src="../static/images/qq-question.jpg" th:src="@{/images/qq-question.jpg}" class="ui m-margin-top rounded image" alt="" style="width: 110px">
+                        </div>
+                    </div>
+                </div>
+
+                <!--博客运行时间统计-->
+                <div class="four wide column">
+                    <div style="font-size: large;font-weight: bold" class="ui inverted  m-text-thin m-text-spaced m-margin-top">客栈信息</div>
+                    <div id="blog-message">
+                        <div class="ui inverted link list" style="align-content: center;margin-top: 10px">
+                            <div class="m-text-thin">
+                                文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 篇
+                            </div>
+                            <div class="m-text-thin">
+                                访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 次
+                            </div>
+                            <div class="m-text-thin">
+                                评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                            <div class="m-text-thin">
+                                留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <div style="color: #F08047;margin-top: -18px" class="ui inverted m-text-thin m-text-spaced">我的客栈已营业：<span id="htmer_time" class="item m-text-thin"></span> (*๓´╰╯`๓)</div>
+            <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备19015593号</a>
+        </div>
+    </footer>
 </body>
 </html>

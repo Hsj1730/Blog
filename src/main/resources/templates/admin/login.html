@@ -1,17 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
-<head>
+<head th:replace="admin/_fragments :: head(~{::title})">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>博客管理登录</title>
-    <link href="../../static/images/me.jpg" th:href="@{/images/me.jpg}" rel="icon" type="image/x-ico">
+    <link href="../../static/images/me.jpg" rel="icon" type="image/x-ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
-    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
-    <style type="text/css">
-        body {
-            background-image: url("../../static/images/bg.png");
-        }
-    </style>
+    <link rel="stylesheet" href="../../static/css/me.css">
 </head>
 <body>
 
@@ -42,7 +37,7 @@
                   <button class="ui fluid large teal submit button">登   录</button>
                 </div>
                 <div class="ui error mini message"></div>
-<!--                <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名和密码错误</div>-->
+                <div class="ui mini negative message" th:unless="${#strings.isEmpty(message)}" th:text="${message}">用户名和密码错误</div>
               </form>
             </div>
           </div>
