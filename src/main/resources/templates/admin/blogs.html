@@ -51,7 +51,7 @@
                 </div>
             </div>
         </div>
-    </div><br>
+    </div><br><br><br>
 
     <!-- 中间内容 -->
     <div class="m-padded-tb-big m-opacity">
@@ -69,9 +69,7 @@
                                 <i class="dropdown icon"></i>
                                 <div class="default text">分类</div>
                                 <div class="menu">
-                                    <div class="item" data-value="1">我的故事</div>
-                                    <div class="item" data-value="2">错误日志</div>
-                                    <div class="item" data-value="3">开发者手册</div>
+                                    <div th:each="type : ${types}" class="item" data-value="1" th:data-value="${type.id}" th:text="${type.name}">我的故事</div>
                                 </div>
                             </div>
                         </div>
@@ -86,14 +84,14 @@
                         <button type="button" id="search-btn" class="ui mini teal basic button"><i class="search icon"></i>搜索</button>
                     </div>
                     <div class="field">
-                        <a href="#">
+                        <a href="#" th:href="@{/admin/blogs/input}">
                             <button type="button" class="ui mini teal button"><i class="pencil icon"></i>新增</button>
                         </a>
                     </div>
                 </div>
             </div>
             <div id="table-container">
-                <table class="ui compact teal table">
+                <table th:fragment="blogList" class="ui compact teal table">
                     <thead>
                         <tr style="text-align:center;">
                             <th>ID</th>
@@ -106,28 +104,28 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr style="text-align:center;">
-                            <td>1</td>
-                            <td>大圣，此去欲何?</td>
-                            <td>我的故事</td>
-                            <td>是</td>
-                            <td>草稿</td>
-                            <td>2020-07-13 09:20</td>
+                        <tr style="text-align:center;" th:each="blog,iterStat : ${page.content}">
+                            <td th:text="${iterStat.count}">1</td>
+                            <td th:text="${blog.title}">大圣，此去欲何?</td>
+                            <td th:text="${blog.type.name}">我的故事</td>
+                            <td th:text="${blog.recommend} ? '是':'否'">是</td>
+                            <td th:text="${blog.published} ? '发布':'草稿'">草稿</td>
+                            <td th:text="${blog.updateTime}">2020-07-13 09:20</td>
                             <td>
-                                <a href="#" class="ui mini teal basic button">编辑</a>
-                                <a href="#" onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
+                                <a href="#" th:href="@{/admin/blogs/{id}/input(id=${blog.id})}" class="ui mini teal basic button">编辑</a>
+                                <a href="#" th:href="@{/admin/blogs/{id}/delete(id=${blog.id})}" onclick="return confirm('确定要删除该文章吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
                             </td>
                         </tr>
                     </tbody>
                     <tfoot>
                         <tr>
                             <th colspan="7">
-                                <div class="ui middle aligned two column grid">
+                                <div class="ui middle aligned two column grid" th:if="${page.totalPages}>1">
                                     <div class="column" style="text-align:center;">
-                                        <a class="ui mini teal basic button">上一页</a>
+                                        <a onclick="page(this)" th:attr="data-page=${page.number}-1" th:unless="${page.first}" class="ui mini teal basic button">上一页</a>
                                     </div>
                                     <div class="column" style="text-align:center;">
-                                        <a class="ui mini teal basic button">下一页</a>
+                                        <a onclick="page(this)" th:attr="data-page=${page.number}+1" th:unless="${page.last}" class="ui mini teal basic button">下一页</a>
                                     </div>
                                 </div>
                             </th>
@@ -135,13 +133,13 @@
                     </tfoot>
                 </table>
 
-                <div class="ui success message">
+                <div class="ui success message" th:unless="${#strings.isEmpty(message)}">
                     <i class="close icon"></i>
-                    <div class="">提示：恭喜，操作成功！</div>
+                    <div th:text="${message}">提示：恭喜，操作成功！</div>
                 </div>
             </div>
         </div>
-    </div><br><br>
+    </div><br><br><br>
 
     <!--底部栏-->
     <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
@@ -264,7 +262,7 @@
         function page(obj) {
             $("[name='page']").val($(obj).data("page"));
             loaddata();
-        };
+        }
 
         $("#search-btn").click(function () {
             $("[name='page']").val(0);
@@ -275,9 +273,10 @@
             $("#table-container").load(/*[[@{/admin/blogs/search}]]*/"/admin/blogs/search",{
                 title : $("[name='title']").val(),
                 typeId : $("[name='typeId']").val(),
+                recommend : $("[name='recommend']").prop('checked'),
                 page : $("[name='page']").val()
             });
-        };
+        }
     </script>
 </body>
 </html>
