@@ -1,11 +1,11 @@
-package com.hsjnb.service;
+package com.hsjnb.dao;
 
-import com.hsjnb.dao.UserRepository;
-import com.hsjnb.po.User;
-import com.hsjnb.util.MD5Utils;
-import org.springframework.stereotype.Service;
+import com.hsjnb.po.Type;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
 
-import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -20,18 +20,14 @@ import javax.annotation.Resource;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/19 11:28
+ * @date : Created in 2020/07/20 12:21
  * @description :
  */
 
-@Service
-public class UserServiceImpl implements UserService {
+public interface TypeRepository extends JpaRepository<Type,Long> {
 
-    @Resource
-    private UserRepository userRepository;
+    Type findByName(String name);
 
-    @Override
-    public User checkUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, MD5Utils.md5(password));
-    }
+    @Query("select t from Type t")
+    List<Type> findTop(Pageable pageable);
 }

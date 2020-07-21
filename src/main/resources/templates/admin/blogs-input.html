@@ -55,7 +55,7 @@
     </div>
 
     <!-- 中间内容 -->
-    <div class="m-padded-tb-big">
+    <div class="m-padded-tb-big m-opacity">
         <div class="ui container">
             <form id="blog-form" action="#" method="post" class="ui form">
                 <input type="hidden" name="published">
@@ -312,50 +312,51 @@
         });
 
         $('.ui.form').form({
-      fields : {
-        title : {
-          identifier: 'title',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请输入博客标题'
-          }]
-        },
-        content : {
-          identifier: 'content',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请输入博客内容'
-          }]
-        },
-        type : {
-          identifier: 'type',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请选择博客分类'
-          }]
-        },
-        tag : {
-            rules: [{
-            type : 'empty',
-            prompt: '标题：请选择博客标签'
-          }]
-        },
-        indexPicture : {
-          identifier: 'indexPicture',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请添加博客首图'
-          }]
-        },
-        description : {
-          identifier: 'description',
-          rules: [{
-            type : 'empty',
-            prompt: '标题：请输入博客描述'
-          }]
-        }
-      }
-    });
+            fields : {
+                title : {
+                    identifier: 'title',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请输入博客标题'
+                    }]
+                },
+                content : {
+                    identifier: 'content',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请输入博客内容'
+                    }]
+                },
+                type : {
+                    identifier: 'type',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请选择博客分类'
+                    }]
+                },
+                tag : {
+                    identifier: 'tag',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请选择博客标签'
+                    }]
+                },
+                indexPicture : {
+                    identifier: 'indexPicture',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请添加博客首图'
+                    }]
+                },
+                description : {
+                    identifier: 'description',
+                    rules: [{
+                        type : 'empty',
+                        prompt: '标题：请输入博客描述'
+                    }]
+                }
+            }
+        });
     </script>
 </body>
 </html>

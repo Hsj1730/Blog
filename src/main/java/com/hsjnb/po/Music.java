@@ -24,7 +24,7 @@ import javax.persistence.*;
 public class Music {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;   //音乐标题

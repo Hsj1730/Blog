@@ -1,11 +1,10 @@
 package com.hsjnb.service;
 
-import com.hsjnb.dao.UserRepository;
-import com.hsjnb.po.User;
-import com.hsjnb.util.MD5Utils;
-import org.springframework.stereotype.Service;
+import com.hsjnb.po.Type;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -20,18 +19,25 @@ import javax.annotation.Resource;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/19 11:28
+ * @date : Created in 2020/07/20 12:13
  * @description :
  */
 
-@Service
-public class UserServiceImpl implements UserService {
+public interface TypeService {
 
-    @Resource
-    private UserRepository userRepository;
+    Type saveType(Type type);
 
-    @Override
-    public User checkUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, MD5Utils.md5(password));
-    }
+    Type getType(Long id);
+
+    Type getTypeByName(String name);
+
+    Page<Type> listType(Pageable pageable);
+
+    List<Type> listType();
+
+    List<Type> listTypeTop(Integer size);
+
+    Type updateType(Long id,Type type);
+
+    void deleteType(Long id);
 }

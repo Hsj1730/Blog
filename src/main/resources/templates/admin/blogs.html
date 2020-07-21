@@ -15,7 +15,7 @@
         <div class="ui container" th:replace="admin/_fragments :: menu(1)">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui olive header item" style="font-family: STSong,serif">管理后台</h2>
-                <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>博文管理</a>
+                <a href="#" class="m-item item m-mobile-hide"><i class="home icon"></i>博文管理</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="clone outline icon"></i>分类管理</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="tags icon"></i>标签管理</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐管理</a>
@@ -51,10 +51,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div><br>
 
     <!-- 中间内容 -->
-    <div class="m-padded-tb-big">
+    <div class="m-padded-tb-big m-opacity">
         <div class="ui container">
             <div class="ui secondary segment form">
                 <input type="hidden" name="page">
@@ -122,14 +122,11 @@
                     <tfoot>
                         <tr>
                             <th colspan="7">
-                                <div class="ui middle aligned three column grid">
-                                    <div class="four wide column" style="text-align:center;">
+                                <div class="ui middle aligned two column grid">
+                                    <div class="column" style="text-align:center;">
                                         <a class="ui mini teal basic button">上一页</a>
                                     </div>
-                                    <div class="eight wide column" style="text-align:center;">
-                                        <p>第 <span ></span> 页，共 <span></span> 页，有 <span></span> 篇文章</p>
-                                    </div>
-                                    <div class="four wide column" style="text-align:center;">
+                                    <div class="column" style="text-align:center;">
                                         <a class="ui mini teal basic button">下一页</a>
                                     </div>
                                 </div>
@@ -140,11 +137,11 @@
 
                 <div class="ui success message">
                     <i class="close icon"></i>
-                    <div class="">提示：操作成功！</div>
+                    <div class="">提示：恭喜，操作成功！</div>
                 </div>
             </div>
         </div>
-    </div>
+    </div><br><br>
 
     <!--底部栏-->
     <footer th:replace="admin/_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
@@ -267,7 +264,7 @@
         function page(obj) {
             $("[name='page']").val($(obj).data("page"));
             loaddata();
-        }
+        };
 
         $("#search-btn").click(function () {
             $("[name='page']").val(0);
@@ -280,7 +277,7 @@
                 typeId : $("[name='typeId']").val(),
                 page : $("[name='page']").val()
             });
-        }
+        };
     </script>
 </body>
 </html>

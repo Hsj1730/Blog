@@ -27,10 +27,12 @@ import java.util.List;
 public class Blog {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;   //博客标题
+
+    private String description; //博客描述
 
     private String content; //博客内容
 
@@ -88,6 +90,14 @@ public class Blog {
 
     public void setTitle(String title) {
         this.title = title;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     public String getContent() {
@@ -223,6 +233,7 @@ public class Blog {
         return "Blog{" +
                 "id=" + id +
                 ", title='" + title + '\'' +
+                ", description='" + description + '\'' +
                 ", content='" + content + '\'' +
                 ", firstPicture='" + firstPicture + '\'' +
                 ", flag='" + flag + '\'' +

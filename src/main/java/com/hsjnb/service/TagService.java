@@ -1,11 +1,10 @@
 package com.hsjnb.service;
 
-import com.hsjnb.dao.UserRepository;
-import com.hsjnb.po.User;
-import com.hsjnb.util.MD5Utils;
-import org.springframework.stereotype.Service;
+import com.hsjnb.po.Tag;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
-import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -20,18 +19,25 @@ import javax.annotation.Resource;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/19 11:28
+ * @date : Created in 2020/07/21 14:25
  * @description :
  */
 
-@Service
-public class UserServiceImpl implements UserService {
+public interface TagService {
 
-    @Resource
-    private UserRepository userRepository;
+    Tag saveTag(Tag tag);
 
-    @Override
-    public User checkUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, MD5Utils.md5(password));
-    }
+    Tag getTag(Long id);
+
+    Tag getTagByName(String name);
+
+    Page<Tag> listTag(Pageable pageable);
+
+    List<Tag> listTag();
+
+    List<Tag> listTagTop(Integer size);
+
+    Tag updateTag(Long id, Tag tag);
+
+    void deleteTag(Long id);
 }

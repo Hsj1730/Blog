@@ -34,7 +34,6 @@ import javax.servlet.http.HttpSession;
 public class LoginController {
 
     @Resource
-//    @Autowired
     private UserService userService;
 
     @GetMapping

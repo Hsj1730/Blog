@@ -26,7 +26,7 @@ import java.util.Date;
 public class FriendLink {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     @NotBlank(message = "博客名称不能为空")

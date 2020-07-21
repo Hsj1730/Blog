@@ -24,7 +24,7 @@ import javax.persistence.*;
 public class Picture {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String pictureName; //图片名称
