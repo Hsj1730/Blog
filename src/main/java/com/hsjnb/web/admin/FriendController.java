@@ -63,7 +63,6 @@ public class FriendController {
 
     @PostMapping("/friendlinks")
     public String post(@Valid FriendLink friendLink, BindingResult result, RedirectAttributes attributes){
-
         if(result.hasErrors()){
             return "admin/friendlinks-input";
         }
@@ -79,6 +78,9 @@ public class FriendController {
 
     @PostMapping("/friendlinks/{id}")
     public String editPost(@Valid FriendLink friendLink, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
+        if(result.hasErrors()){
+            return "admin/friendlinks-input";
+        }
         friendLink.setCreateTime(new Date());
         FriendLink f = friendLinkService.updateFriendLink(id,friendLink);
         if (f == null ) {

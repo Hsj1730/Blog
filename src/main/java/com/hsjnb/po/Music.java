@@ -35,8 +35,8 @@ public class Music {
 
     private String pictureUrl;  //图片地址
 
-    private Boolean isLyrics;   //有无歌词
-
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String lyrics;  //歌词
 
     public Music() {
@@ -83,16 +83,12 @@ public class Music {
         this.pictureUrl = pictureUrl;
     }
 
-    public Boolean getLyrics() {
-        return isLyrics;
+    public String getLyrics() {
+        return lyrics;
     }
 
     public void setLyrics(String lyrics) {
         this.lyrics = lyrics;
-    }
-
-    public void setLyrics(Boolean lyrics) {
-        isLyrics = lyrics;
     }
 
     @Override
@@ -103,7 +99,6 @@ public class Music {
                 ", author='" + author + '\'' +
                 ", musicUrl='" + musicUrl + '\'' +
                 ", pictureUrl='" + pictureUrl + '\'' +
-                ", isLyrics=" + isLyrics +
                 ", lyrics='" + lyrics + '\'' +
                 '}';
     }
