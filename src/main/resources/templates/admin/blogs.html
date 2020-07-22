@@ -21,7 +21,6 @@
                 <a href="#" class="m-item item m-mobile-hide"><i class="music icon"></i>音乐管理</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="pencil alternate icon"></i>友链管理</a>
                 <a href="#" class="m-item item m-mobile-hide"><i class="image icon"></i>相册管理</a>
-                <a href="#" class="m-item item m-mobile-hide"><i class="info icon"></i>系统管理</a>
                 <div class="right m-item m-mobile-hide menu">
                     <div class="ui dropdown item">
                         <div class="text">
@@ -46,8 +45,8 @@
         <div class="ui attached pointing menu">
             <div class="ui container">
                 <div class="right menu">
-                    <a href="#" class="item">发布</a>
-                    <a href="#" class="teal active item">列表</a>
+                    <a href="#" th:href="@{/admin/blogs/input}" class="item">发布</a>
+                    <a href="#" th:href="@{/admin/blogs}" class="teal active item">列表</a>
                 </div>
             </div>
         </div>
@@ -73,6 +72,7 @@
                                 </div>
                             </div>
                         </div>
+                        <button id="clear-btn" class="ui mini compact basic button">clear</button>
                     </div>
                     <div class="field">
                         <div class="ui checkbox">
@@ -277,6 +277,8 @@
                 page : $("[name='page']").val()
             });
         }
+
+        $('#clear-btn').on('click', function() {$('.ui.type.dropdown').dropdown('clear')})
     </script>
 </body>
 </html>

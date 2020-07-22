@@ -1,12 +1,11 @@
-package com.hsjnb.service;
+package com.hsjnb.util;
 
-import com.hsjnb.po.Blog;
-import com.hsjnb.vo.BlogQuery;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import org.springframework.beans.BeanWrapper;
+import org.springframework.beans.BeanWrapperImpl;
 
+import java.beans.PropertyDescriptor;
+import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -21,33 +20,25 @@ import java.util.Map;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/21 15:36
+ * @date : Created in 2020/07/22 14:47
  * @description :
  */
 
-public interface BlogService {
+public class MyBeanUtils {
 
-    Blog getBlog(Long id);
-
-    Blog getAndConvert(Long id);
-
-    Page<Blog> listBlog(Pageable pageable,BlogQuery blog);
-
-    Page<Blog> listBlog(Pageable pageable);
-
-    Page<Blog> listBlog(Long tagId,Pageable pageable);
-
-    Page<Blog> listBlog(String query,Pageable pageable);
-
-    List<Blog> listRecommendBlogTop(Integer size);
-
-    Map<String,List<Blog>> archiveBlog();
-
-    Long countBlog();
-
-    Blog saveBlog(Blog blog);
-
-    Blog updateBlog(Long id,Blog blog);
-
-    void deleteBlog(Long id);
+    /**
+     * 获取所有的属性值为空属性名数组
+     */
+    public static String[] getNullPropertyNames(Object source) {
+        BeanWrapper beanWrapper = new BeanWrapperImpl(source);
+        PropertyDescriptor[] pds =  beanWrapper.getPropertyDescriptors();
+        List<String> nullPropertyNames = new ArrayList<>();
+        for (PropertyDescriptor pd : pds) {
+            String propertyName = pd.getName();
+            if (beanWrapper.getPropertyValue(propertyName) == null) {
+                nullPropertyNames.add(propertyName);
+            }
+        }
+        return nullPropertyNames.toArray(new String[nullPropertyNames.size()]);
+    }
 }

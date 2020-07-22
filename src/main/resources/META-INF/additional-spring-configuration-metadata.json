@@ -1,0 +1,8 @@
+{
+  "properties": [
+    {
+      "name": "spring.jpa.open-in-view=false",
+      "type": "java.lang.String",
+      "description": "Description for spring.jpa.open-in-view=false."
+  }
+] }
