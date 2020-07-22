@@ -1,7 +1,7 @@
 package com.hsjnb.web.admin;
 
-import com.hsjnb.po.FriendLink;
-import com.hsjnb.service.FriendLinkService;
+import com.hsjnb.po.Picture;
+import com.hsjnb.service.PictureService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -16,7 +16,6 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.annotation.Resource;
 import javax.validation.Valid;
-import java.util.Date;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -31,68 +30,66 @@ import java.util.Date;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 15:14
+ * @date : Created in 2020/07/22 16:20
  * @description :
  */
 
 @Controller
 @RequestMapping("/admin")
-public class FriendController {
+public class PictureController {
 
     @Resource
-    private FriendLinkService friendLinkService;
+    private PictureService pictureService;
 
-    @GetMapping("/friendlinks")
-    public String friend(@PageableDefault(size = 5,sort = {"id"},direction = Sort.Direction.DESC)
-                                     Pageable pageable, Model model) {
-        model.addAttribute("page",friendLinkService.listFriendLink(pageable));
-        return "admin/friendlinks";
+    @GetMapping("/pictures")
+    public String pictures(@PageableDefault(size = 5,sort = {"id"},direction = Sort.Direction.DESC)
+                                   Pageable pageable, Model model){
+        model.addAttribute("page",pictureService.listPicture(pageable));
+        return "admin/pictures";
     }
 
-    @GetMapping("/friendlinks/input")
+    @GetMapping("/pictures/input")
     public String input(Model model) {
-        model.addAttribute("friendlink", new FriendLink());
-        return "admin/friendlinks-input";
+        model.addAttribute("picture", new Picture());
+        return "admin/pictures-input";
     }
 
-    @GetMapping("/friendlinks/{id}/input")
+    @GetMapping("/pictures/{id}/input")
     public String editInput(@PathVariable Long id, Model model) {
-        model.addAttribute("friendlink", friendLinkService.getFriendLink(id));
-        return "admin/friendlinks-input";
+        model.addAttribute("picture", pictureService.getPicture(id));
+        return "admin/pictures-input";
     }
 
-    @PostMapping("/friendlinks")
-    public String post(@Valid FriendLink friendLink, BindingResult result, RedirectAttributes attributes){
-
+    @PostMapping("/pictures")
+    public String post(@Valid Picture picture, BindingResult result, RedirectAttributes attributes){
         if(result.hasErrors()){
-            return "admin/friendlinks-input";
+            return "admin/pictures-input";
         }
-        friendLink.setCreateTime(new Date());
-        FriendLink f = friendLinkService.saveFriendLink(friendLink);
-        if (f == null ) {
+        Picture p = pictureService.savePicture(picture);
+        if (p == null ) {
             attributes.addFlashAttribute("message", "新增失败");
         } else {
             attributes.addFlashAttribute("message", "新增成功");
         }
-        return "redirect:/admin/friendlinks";
+        return "redirect:/admin/pictures";
     }
 
-    @PostMapping("/friendlinks/{id}")
-    public String editPost(@Valid FriendLink friendLink, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
-        friendLink.setCreateTime(new Date());
-        FriendLink f = friendLinkService.updateFriendLink(id,friendLink);
-        if (f == null ) {
+    @PostMapping("/pictures/{id}")
+    public String editPost(@Valid Picture picture, BindingResult result, @PathVariable Long id, RedirectAttributes attributes) {
+
+        Picture p = pictureService.updatePicture(id,picture);
+        if (p == null ) {
             attributes.addFlashAttribute("message", "编辑失败");
         } else {
             attributes.addFlashAttribute("message", "编辑成功");
         }
-        return "redirect:/admin/friendlinks";
+        return "redirect:/admin/pictures";
     }
 
-    @GetMapping("/friendlinks/{id}/delete")
+    @GetMapping("/pictures/{id}/delete")
     public String delete(@PathVariable Long id, RedirectAttributes attributes){
-        friendLinkService.deleteFriendLink(id);
+        pictureService.deletePicture(id);
         attributes.addFlashAttribute("message", "删除成功");
-        return "redirect:/admin/friendlinks";
+        return "redirect:/admin/pictures";
     }
 }
