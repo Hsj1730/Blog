@@ -21,19 +21,19 @@
         <div class="ui container">
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui olive header item" style="font-family: STSong,serif;">BLOG</h2>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="music icon"></i>音乐盒</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==7} ? 'active'"><i class="pencil alternate icon"></i>友人帐</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==8} ? 'active'"><i class="image icon"></i>照片墙</a>
-                <a href="#" class="m-item item m-mobile-hide" th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
+                <a href="#" th:href="@{/}" class="m-item item m-mobile-hide" th:classappend="${n==1} ? 'active'"><i class="home icon"></i>首页</a>
+                <a href="#" th:href="@{/types/-1}" class="m-item item m-mobile-hide" th:classappend="${n==2} ? 'active'"><i class="clone outline icon"></i>分类</a>
+                <a href="#" th:href="@{/tags/-1}" class="m-item item m-mobile-hide" th:classappend="${n==3} ? 'active'"><i class="tags icon"></i>标签</a>
+                <a href="#" th:href="@{/archives}" class="m-item item m-mobile-hide" th:classappend="${n==4} ? 'active'"><i class="clock icon"></i>时间轴</a>
+                <a href="#" th:href="@{/music}" class="m-item item m-mobile-hide" th:classappend="${n==5} ? 'active'"><i class="music icon"></i>音乐盒</a>
+                <a href="#" th:href="@{/message}" class="m-item item m-mobile-hide" th:classappend="${n==6} ? 'active'"><i class="book icon"></i>留言板</a>
+                <a href="#" th:href="@{/friends}" class="m-item item m-mobile-hide" th:classappend="${n==7} ? 'active'"><i class="pencil alternate icon"></i>友人帐</a>
+                <a href="#" th:href="@{/picture}" class="m-item item m-mobile-hide" th:classappend="${n==8} ? 'active'"><i class="image icon"></i>照片墙</a>
+                <a href="#" th:href="@{/about}" class="m-item item m-mobile-hide" th:classappend="${n==9} ? 'active'"><i class="info icon"></i>关于我</a>
                 <div class="right m-item item m-mobile-hide">
-                    <form name="search" action="#" method="post" target="_blank">
+                    <form name="search" action="#" th:action="@{/search}" method="post" target="_blank">
                         <div class="ui icon input m-margin-tb-tiny">
-                            <input type="text" name="query" placeholder="Search....">
+                            <input type="text" name="query" placeholder="Search...." th:value="${query}">
                             <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                         </div>
                     </form>
@@ -80,21 +80,27 @@
 
                 <!--博客运行时间统计-->
                 <div class="four wide column">
-                    <div style="font-size: large;font-weight: bold" class="ui inverted  m-text-thin m-text-spaced m-margin-top">客栈信息</div>
-                    <div id="blog-message">
-                        <div class="ui inverted link list" style="align-content: center;margin-top: 10px">
-                            <div class="m-text-thin">
-                                文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 篇
-                            </div>
-                            <div class="m-text-thin">
-                                访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 次
-                            </div>
-                            <div class="m-text-thin">
-                                评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
-                            </div>
-                            <div class="m-text-thin">
-                                留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条
-                            </div>
+<!--                    <div style="font-size: large;font-weight: bold" class="ui inverted  m-text-thin m-text-spaced m-margin-top">最新博客</div>-->
+<!--                    <div id="blog-message">-->
+<!--                        <div class="ui inverted link list" style="align-content: center;margin-top: 10px">-->
+<!--                            <div class="m-text-thin">-->
+<!--                                文章总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 篇-->
+<!--                            </div>-->
+<!--                            <div class="m-text-thin">-->
+<!--                                访问总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 次-->
+<!--                            </div>-->
+<!--                            <div class="m-text-thin">-->
+<!--                                评论总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条-->
+<!--                            </div>-->
+<!--                            <div class="m-text-thin">-->
+<!--                                留言总数： <h2 class="ui orange header m-inline-block m-margin-top-null" style="font-size:medium;"> 14 </h2> 条-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+                    <h4 class="ui inverted header m-text-thin m-text-spaced " >最新博客</h4>
+                    <div id="newblog-container">
+                        <div class="ui inverted link list" th:fragment="newblogList">
+                            <a href="#" th:href="@{/blog/{id}(id=${blog.id})}" target="_blank" class="item m-text-thin" th:each="blog : ${newblogs}" th:text="${blog.title}">用户故事（User Story）</a>
                         </div>
                     </div>
                 </div>
@@ -104,5 +110,11 @@
             <a rel="nofollow" href="http://www.beian.miit.gov.cn" target="_blank">渝ICP备19015593号</a>
         </div>
     </footer>
+
+    <th:block th:fragment="script">
+        <script>
+            $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+        </script>
+    </th:block>
 </body>
 </html>

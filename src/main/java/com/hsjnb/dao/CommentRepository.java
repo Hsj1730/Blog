@@ -1,8 +1,11 @@
-package com.hsjnb.service;
+package com.hsjnb.dao;
 
-import com.hsjnb.po.Music;
-import org.springframework.data.domain.Page;
-import org.springframework.data.domain.Pageable;
+import com.hsjnb.po.Comment;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -19,21 +22,16 @@ import java.util.List;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 17:14
+ * @date : Created in 2020/07/23 10:02
  * @description :
  */
 
-public interface MusicService {
+public interface CommentRepository extends JpaRepository<Comment,Long> {
 
-    List<Music> listMusic();
+    List<Comment> findByBlogIdAndParentCommentNull(Long blogId, Sort sort);
 
-    Music saveMusic(Music music);
-
-    Music getMusic(Long id);
-
-    Page<Music> listMusic(Pageable pageable);
-
-    Music updateMusic(Long id,Music music);
-
-    void deleteMusic(Long id);
+    @Transactional
+    @Modifying
+    @Query("update Blog b set b.allComments = b.allComments+1 where b.id = ?1")
+    int updateAllComments(Long id);
 }

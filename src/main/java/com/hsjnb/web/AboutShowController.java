@@ -1,10 +1,7 @@
-package com.hsjnb.dao;
+package com.hsjnb.web;
 
-import com.hsjnb.po.Music;
-import org.springframework.data.domain.Sort;
-import org.springframework.data.jpa.repository.JpaRepository;
-
-import java.util.List;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -19,11 +16,15 @@ import java.util.List;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 17:14
+ * @date : Created in 2020/07/22 19:53
  * @description :
  */
 
-public interface MusicRepository extends JpaRepository<Music,Long> {
+@Controller
+public class AboutShowController {
 
-    List<Music> findAll(Sort sort);
+    @GetMapping("/about")
+    public String about() {
+        return "about";
+    }
 }

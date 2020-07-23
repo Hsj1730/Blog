@@ -1,8 +1,14 @@
 {
   "properties": [
     {
-      "name": "spring.jpa.open-in-view=false",
+      "name": "comment.avatar",
       "type": "java.lang.String",
-      "description": "Description for spring.jpa.open-in-view=false."
-  }
-] }
+      "description": "Description for comment.avatar."
+    },
+    {
+      "name": "message.avatar",
+      "type": "java.lang.String",
+      "description": "Description for message.avatar."
+    }
+  ]
+}

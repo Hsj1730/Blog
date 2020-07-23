@@ -52,18 +52,17 @@
 
     <!--照片墙-->
     <div id="picture-main">
-
-        <article class="thumb">
+        <article class="thumb" th:each="picture : ${pictures}">
             <div class="ma5-gallery">
                 <div class="rthumbnail">
-                    <a href="../static/images/backimg1.jpg" th:href="@{/images/backimg1.jpg}">
-                        <img class="picture-zmki_px" src="../static/images/backimg1.jpg" th:src="@{/images/backimg1.jpg}" alt="">
+                    <a href="../static/images/backimg1.jpg" th:href="@{${picture.pictureAddress}}">
+                        <img class="picture-zmki_px" src="../static/images/backimg1.jpg" th:src="@{${picture.pictureAddress}}" alt="">
                     </a>
-                    <div class="m-picture-text">起风了</div>
+                    <div class="m-picture-text" th:text="${picture.pictureName}">起风了</div>
                     <div  class="rcaption">
-                        <div style="font-size: large;">起风了</div>
-                        <div style="font-size: small" class="m-margin-top">2020-07-13 &nbsp;重庆</div>
-                        <p style="font-size: small">我曾难自拔于世界之大，也沉迷于其中梦话</p>
+                        <div style="font-size: large;" th:text="${picture.pictureName}">起风了</div>
+                        <div style="font-size: small" class="m-margin-top" th:text="${picture.pictureTimeLocation}">2020-07-13 &nbsp;重庆</div>
+                        <p style="font-size: small" th:text="${picture.pictureDescription}">我曾难自拔于世界之大，也沉迷于其中梦话</p>
                     </div>
                 </div>
             </div>

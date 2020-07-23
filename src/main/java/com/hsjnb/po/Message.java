@@ -41,7 +41,7 @@ public class Message {
     @Temporal(TemporalType.TIMESTAMP)
     private Date createTime;    //发表时间
 
-    private boolean adminMessage;   //是否是栈主
+    private boolean adminComment;   //是否是栈主
 
     @OneToMany(mappedBy = "parentMessage")
     private List<Message> replyMessages = new ArrayList<>();
@@ -101,12 +101,12 @@ public class Message {
         this.createTime = createTime;
     }
 
-    public boolean isAdminMessage() {
-        return adminMessage;
+    public boolean isAdminComment() {
+        return adminComment;
     }
 
-    public void setAdminMessage(boolean adminMessage) {
-        this.adminMessage = adminMessage;
+    public void setAdminComment(boolean adminComment) {
+        this.adminComment = adminComment;
     }
 
     public List<Message> getReplyMessages() {
@@ -134,7 +134,9 @@ public class Message {
                 ", content='" + content + '\'' +
                 ", avatar='" + avatar + '\'' +
                 ", createTime=" + createTime +
-                ", adminMessage=" + adminMessage +
+                ", adminComment=" + adminComment +
+                ", replyMessages=" + replyMessages +
+                ", parentMessage=" + parentMessage +
                 '}';
     }
 }

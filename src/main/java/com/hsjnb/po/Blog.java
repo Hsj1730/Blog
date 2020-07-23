@@ -32,6 +32,8 @@ public class Blog {
 
     private String title;   //博客标题
 
+    @Basic(fetch = FetchType.LAZY)
+    @Lob
     private String description; //博客描述
 
     @Basic(fetch = FetchType.LAZY)

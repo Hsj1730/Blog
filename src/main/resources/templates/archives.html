@@ -42,15 +42,15 @@
 
     <!--时间轴内容-->
     <div class="doc-container m-padded-tb-massivex m-opacity" id="doc-container">
-        <th:block >
+        <th:block th:each="item : ${archiveMap}">
             <section class="timeline">
                 <ul>
-                    <li>
+                    <li  th:each="blog : ${item.value}">
                         <div>
-                            <time>2020/07/13</time>
+                            <time th:text="${#dates.format(blog.updateTime,'yyyy-MM-dd')}">2020/07/13</time>
                             <div class="scientist">
-                                <a href="#" target="_blank">
-                                    <h3 class="state" style="text-align:center;font-size: 16px;color: #000;">文章标题</h3>
+                                <a href="#" target="_blank" th:href="@{/blog/{id}(id=${blog.id})}">
+                                    <h3 class="state" style="text-align:center;font-size: 16px;color: #000;" th:text="${blog.title}">文章标题</h3>
                                 </a>
                             </div>
                         </div>
