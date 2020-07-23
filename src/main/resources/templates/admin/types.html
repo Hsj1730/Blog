@@ -52,6 +52,9 @@
     </div><br><br><br><br>
 
     <!--中间内容-->
+
+    $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
     <div class="m-padded-tb-big m-opacity">
         <div class="ui container">
             <div class="ui success message" th:unless="${#strings.isEmpty(message)}">

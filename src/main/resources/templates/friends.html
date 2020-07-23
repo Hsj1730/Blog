@@ -103,6 +103,11 @@
         </div>
     </div>
 
+    <!--置顶图标-->
+    <div id="toolbar" class="m-padded m-fixed m-right-bottom">
+        <a href="#" id="toTop-button" class="ui teal icon button"><i class="chevron up icon"></i></a>
+    </div>
+
     <!--底部栏-->
     <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive m-opacity">
         <!--容器-->
@@ -166,8 +171,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 
     <script>
+
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
         // 运行时间统计
         function secondToDate(second) {
             if (!second) {
@@ -210,6 +219,10 @@
 
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('#toTop-button').click(function() {
+            $(window).scrollTo(0,500);
         });
     </script>
 </body>

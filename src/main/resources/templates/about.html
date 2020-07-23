@@ -79,7 +79,7 @@
                 <img src="../static/images/qq.jpg" th:src="@{/images/qq.jpg}" alt="" class="ui rounded image" style="width: 110px">
                 <div style="text-align:center;">QQ</div>
             </div>
-            <hr class="m-margin-top-small" style="width: 30%">
+            <center><hr style="text-align:center; width: 30%"/></center>
             <br>
             <div>
                 <p>“小二，上茶~”</p>
@@ -118,6 +118,11 @@
                 </div>
             </div>
         </div>
+    </div>
+
+    <!--置顶图标-->
+    <div id="toolbar" class="m-padded m-fixed m-right-bottom">
+        <a href="#" id="toTop-button" class="ui teal icon button"><i class="chevron up icon"></i></a>
     </div>
 
     <!--底部栏-->
@@ -183,8 +188,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
 
     <script>
+
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
         // 运行时间统计
         function secondToDate(second) {
             if (!second) {
@@ -255,6 +264,10 @@
 
         // 显示github
         $('.github').popup();
+
+        $('#toTop-button').click(function() {
+            $(window).scrollTo(0,500);
+        });
     </script>
 </body>
 </html>

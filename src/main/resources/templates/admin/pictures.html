@@ -166,6 +166,9 @@
     <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 
     <script>
+
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
         // 运行时间统计
         function secondToDate(second) {
             if (!second) {

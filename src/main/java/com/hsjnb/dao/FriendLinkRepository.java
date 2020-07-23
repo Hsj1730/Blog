@@ -22,5 +22,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface FriendLinkRepository extends JpaRepository<FriendLink,Long> {
 
-    FriendLink findByBlogName(String blogName);
 }

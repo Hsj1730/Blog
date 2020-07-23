@@ -124,6 +124,9 @@
     <script type="text/javascript" src="../static/lib/music/js/zplayer.min.js" th:src="@{/lib/music/js/zplayer.min.js}"></script>
 
     <script>
+
+        $('#newblog-container').load(/*[[@{/footer/newblog}]]*/"/footer/newblog");
+
         var zp2 = new zplayer({
             element: document.getElementById("player2"),
             lrcStart: true,/*是否开启歌词功能 ，默认false（为true时musics集合中需要传入lrc字段。）*/

@@ -1,8 +1,9 @@
 package com.hsjnb.web;
 
+import com.hsjnb.po.Type;
 import com.hsjnb.service.BlogService;
-import com.hsjnb.service.TagService;
 import com.hsjnb.service.TypeService;
+import com.hsjnb.vo.BlogQuery;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -10,10 +11,9 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -28,49 +28,31 @@ import javax.annotation.Resource;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/16 0:38
- * @description : 返回到首页的控制器
+ * @date : Created in 2020/07/23 13:26
+ * @description :
  */
 
 @Controller
-public class IndexController {
-
-    @Resource
-    private BlogService blogService;
+public class TypeShowController {
 
     @Resource
     private TypeService typeService;
 
     @Resource
-    private TagService tagService;
+    private BlogService blogService;
 
-    @GetMapping("/")
-    public String index(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                        Model model) {
-        model.addAttribute("page",blogService.listBlog(pageable));
-        model.addAttribute("types",typeService.listTypeTop(6));
-        model.addAttribute("tags",tagService.listTagTop(10));
-        model.addAttribute("recommendBlogs",blogService.listRecommendBlogTop(4));
-        return "index";
-    }
-
-    @PostMapping("/search")
-    public String search(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
-                         @RequestParam String query, Model model) {
-        model.addAttribute("page", blogService.listBlog("%" + query + "%", pageable));
-        model.addAttribute("query", query);
-        return "search";
-    }
-
-    @GetMapping("/blog/{id}")
-    public String blog(@PathVariable Long id, Model model) {
-        model.addAttribute("blog", blogService.getAndConvert(id));
-        return "blog";
-    }
-
-    @GetMapping("/footer/newblog")
-    public String newblogs(Model model) {
-        model.addAttribute("newblogs", blogService.listRecommendBlogTop(5));
-        return "_fragments :: newblogList";
+    @GetMapping("/types/{id}")
+    public String types(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                        @PathVariable Long id, Model model) {
+        List<Type> types = typeService.listTypeTop(10000);
+        if (id == -1) {
+            id = types.get(0).getId();
+        }
+        BlogQuery blogQuery = new BlogQuery();
+        blogQuery.setTypeId(id);
+        model.addAttribute("types", types);
+        model.addAttribute("page", blogService.listBlog(pageable, blogQuery));
+        model.addAttribute("activeTypeId", id);
+        return "types";
     }
 }
