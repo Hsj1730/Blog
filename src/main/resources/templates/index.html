@@ -12,7 +12,7 @@
 
     <!-- 导航 -->
     <nav id="nav" class="gird-header" style="display: none;">
-        <div class="ui container" th:replace="_fragments :: menu(1)">
+        <div class="ui container" th:replace="_fragments :: menu(1)" >
             <div class="ui inverted secondary stackable menu">
                 <h2 class="ui olive header item" style="font-family: STSong,serif;">BLOG</h2>
                 <a href="#" class="active m-item item m-mobile-hide"><i class="home icon"></i>首页</a>
@@ -31,6 +31,18 @@
                             <i onclick="document.forms['search'].submit()" class="search link icon"></i>
                         </div>
                     </form>
+                </div>
+                <div class="right m-item m-mobile-hide menu">
+                    <div class="ui dropdown item">
+                        <div class="text">
+                            <img src="../../static/images/me.jpg" alt="" class="ui avatar image">
+                            <span>oneStar</span>
+                        </div>
+                        <i class="dropdown icon"></i>
+                        <div class="menu">
+                            <a href="#" th:href="@{/}" class="item">注销</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -53,7 +65,7 @@
                 <a href="#" class="ui wechat circular icon button"><i class="weixin icon"></i></a>
                 <a href="#" class="ui qq circular icon button" data-content="1830190904" data-position="bottom center"><i class="qq icon"></i></a>
                 <a href="https://github.com/Hsj1730/" target="_blank" class="ui github circular icon button" data-content="点击跳转GitHub" data-position="bottom center"><i class="github icon"></i></a>
-                <a href="https://blog.csdn.net/hsjsgdsb/" target="_blank" class="ui csdn circular icon button" data-content="点击跳转CSDN" data-position="bottom center"><i class="copyright outline icon"></i></a>
+                <a href="https://blog.csdn.net/Hsj1730/" target="_blank" class="ui csdn circular icon button" data-content="点击跳转CSDN" data-position="bottom center"><i class="copyright outline icon"></i></a>
                 <a href="#" class="ui email circular icon button" data-content="1830190904@qq.com" data-position="bottom center"><i class="envelope icon"></i></a>
             </div>
 
@@ -298,6 +310,10 @@
 
         $('.menu.toggle').click(function () {
             $('.m-item').toggleClass('m-mobile-hide');
+        });
+
+        $('.ui.dropdown').dropdown({
+            on : 'hover'
         });
 
         // 显示公众号
