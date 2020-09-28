@@ -1,6 +1,6 @@
 package com.hsjnb.dao;
 
-import com.hsjnb.po.Comment;
+import com.hsjnb.entity.Comment;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;

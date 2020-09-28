@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.User;
+import com.hsjnb.entity.User;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗

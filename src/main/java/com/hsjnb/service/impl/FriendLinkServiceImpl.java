@@ -1,8 +1,9 @@
-package com.hsjnb.service;
+package com.hsjnb.service.impl;
 
 import com.hsjnb.NotFoundException;
 import com.hsjnb.dao.FriendLinkRepository;
-import com.hsjnb.po.FriendLink;
+import com.hsjnb.entity.FriendLink;
+import com.hsjnb.service.FriendLinkService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

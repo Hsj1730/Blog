@@ -1,10 +1,12 @@
-package com.hsjnb.service;
+package com.hsjnb.service.impl;
 
 import com.hsjnb.NotFoundException;
-import com.hsjnb.dao.PictureRepository;
-import com.hsjnb.po.Picture;
+import com.hsjnb.dao.TypeRepository;
+import com.hsjnb.entity.Type;
+import com.hsjnb.service.TypeService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
@@ -26,55 +28,68 @@ import java.util.List;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 16:14
+ * @date : Created in 2020/07/20 12:19
  * @description :
  */
 
 @Service
-public class PictureServiceImpl implements PictureService{
+public class TypeServiceImpl implements TypeService {
 
     @Resource
-    private PictureRepository pictureRepository;
+    private TypeRepository typeRepository;
 
     @Transactional
     @Override
-    public List<Picture> listPicture() {
-        Sort sort = Sort.by(Sort.Order.desc("id"));
-        return pictureRepository.findAll(sort);
+    public Type saveType(Type type) {
+        return typeRepository.save(type);
     }
 
     @Transactional
     @Override
-    public Picture savePicture(Picture picture) {
-        return pictureRepository.save(picture);
+    public Type getType(Long id) {
+        return typeRepository.findById(id).orElse(null);
     }
 
     @Transactional
     @Override
-    public Picture getPicture(Long id) {
-        return pictureRepository.findById(id).orElse(null);
+    public Type getTypeByName(String name) {
+        return typeRepository.findByName(name);
     }
 
     @Transactional
     @Override
-    public Page<Picture> listPicture(Pageable pageable) {
-        return pictureRepository.findAll(pageable);
+    public Page<Type> listType(Pageable pageable) {
+        return typeRepository.findAll(pageable);
     }
 
     @Transactional
     @Override
-    public Picture updatePicture(Long id, Picture picture) {
-        Picture p = pictureRepository.findById(id).orElse(null);
-        if (p == null) {
-            throw new NotFoundException("不存在该照片");
+    public List<Type> listType() {
+        return typeRepository.findAll();
+    }
+
+    @Transactional
+    @Override
+    public List<Type> listTypeTop(Integer size) {
+        Sort sort = Sort.by(Sort.Order.desc("blogs.size"));
+        Pageable pageable =PageRequest.of(0, size, sort);
+        return typeRepository.findTop(pageable);
+    }
+
+    @Transactional
+    @Override
+    public Type updateType(Long id, Type type) {
+        Type t = typeRepository.findById(id).orElse(null);
+        if (t == null) {
+            throw new NotFoundException("不存在该类型");
         }
-        BeanUtils.copyProperties(picture,p);
-        return pictureRepository.save(p);
+        BeanUtils.copyProperties(type,t);
+        return typeRepository.save(t);
     }
 
     @Transactional
     @Override
-    public void deletePicture(Long id) {
-        pictureRepository.deleteById(id);
+    public void deleteType(Long id) {
+        typeRepository.deleteById(id);
     }
 }

@@ -1,4 +1,4 @@
-package com.hsjnb.po;
+package com.hsjnb.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;

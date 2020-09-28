@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.Blog;
+import com.hsjnb.entity.Blog;
 import com.hsjnb.vo.BlogQuery;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;

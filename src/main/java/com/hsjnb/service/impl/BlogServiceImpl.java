@@ -1,9 +1,10 @@
-package com.hsjnb.service;
+package com.hsjnb.service.impl;
 
 import com.hsjnb.NotFoundException;
 import com.hsjnb.dao.BlogRepository;
-import com.hsjnb.po.Blog;
-import com.hsjnb.po.Type;
+import com.hsjnb.entity.Blog;
+import com.hsjnb.entity.Type;
+import com.hsjnb.service.BlogService;
 import com.hsjnb.util.MarkdownUtils;
 import com.hsjnb.util.MyBeanUtils;
 import com.hsjnb.vo.BlogQuery;

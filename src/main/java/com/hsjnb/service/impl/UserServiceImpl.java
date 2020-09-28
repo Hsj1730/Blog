@@ -1,7 +1,12 @@
-package com.hsjnb.web;
+package com.hsjnb.service.impl;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
+import com.hsjnb.dao.UserRepository;
+import com.hsjnb.entity.User;
+import com.hsjnb.service.UserService;
+import com.hsjnb.util.MD5Utils;
+import org.springframework.stereotype.Service;
+
+import javax.annotation.Resource;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -16,15 +21,18 @@ import org.springframework.web.bind.annotation.GetMapping;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 20:48
+ * @date : Created in 2020/07/19 11:28
  * @description :
  */
 
-@Controller
-public class MusicShowController {
+@Service
+public class UserServiceImpl implements UserService {
 
-    @GetMapping("/music")
-    public String about() {
-        return "music";
+    @Resource
+    private UserRepository userRepository;
+
+    @Override
+    public User checkUser(String username, String password) {
+        return userRepository.findByUsernameAndPassword(username, MD5Utils.md5(password));
     }
 }

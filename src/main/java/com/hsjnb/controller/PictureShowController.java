@@ -1,9 +1,9 @@
-package com.hsjnb.service;
+package com.hsjnb.controller;
 
-import com.hsjnb.dao.UserRepository;
-import com.hsjnb.po.User;
-import com.hsjnb.util.MD5Utils;
-import org.springframework.stereotype.Service;
+import com.hsjnb.service.PictureService;
+import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.GetMapping;
 
 import javax.annotation.Resource;
 
@@ -20,18 +20,19 @@ import javax.annotation.Resource;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/19 11:28
+ * @date : Created in 2020/07/22 19:38
  * @description :
  */
 
-@Service
-public class UserServiceImpl implements UserService {
+@Controller
+public class PictureShowController {
 
     @Resource
-    private UserRepository userRepository;
+    private PictureService pictureService;
 
-    @Override
-    public User checkUser(String username, String password) {
-        return userRepository.findByUsernameAndPassword(username, MD5Utils.md5(password));
+    @GetMapping("/picture")
+    public String picture(Model model){
+        model.addAttribute("pictures",pictureService.listPicture());
+        return "picture";
     }
 }

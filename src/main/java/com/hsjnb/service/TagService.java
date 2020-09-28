@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.Tag;
+import com.hsjnb.entity.Tag;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

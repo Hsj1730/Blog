@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.Message;
+import com.hsjnb.entity.Message;
 
 import java.util.List;
 

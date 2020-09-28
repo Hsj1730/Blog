@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.Comment;
+import com.hsjnb.entity.Comment;
 
 import java.util.List;
 

@@ -29,7 +29,7 @@
 2020-07-17 17:05:01.776  INFO 16776 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:05:01.776  INFO 16776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:05:01.784  INFO 16776 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 17:05:01.844  INFO 16776 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:05:01.844  INFO 16776 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:05:01.848  INFO 16776 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:05:02.193 ERROR 16776 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -261,7 +261,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:15:55.203  INFO 3404 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:15:55.204  INFO 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:15:55.216  INFO 3404 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-07-17 17:15:55.265  INFO 3404 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:15:55.265  INFO 3404 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:15:55.269  INFO 3404 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:15:55.673 ERROR 3404 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -493,7 +493,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:18:16.624  INFO 4208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:18:16.624  INFO 4208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:18:16.634  INFO 4208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 17:18:16.693  INFO 4208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:18:16.693  INFO 4208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:18:16.698  INFO 4208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:18:17.043 ERROR 4208 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -725,7 +725,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:20:10.970  INFO 9596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:20:10.970  INFO 9596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:20:10.979  INFO 9596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-17 17:20:11.031  INFO 9596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:20:11.031  INFO 9596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:20:11.035  INFO 9596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:20:11.341 ERROR 9596 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -957,9 +957,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:26:06.149  INFO 15048 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:26:06.149  INFO 15048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:26:06.156  INFO 15048 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:26:06.206  INFO 15048 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 17:26:06.206  INFO 15048 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 17:26:06.210  INFO 15048 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 17:26:10.629  INFO 15048 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:26:10.629  INFO 15048 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:26:10.629  INFO 15048 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:26:10.660 ERROR 15048 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -1144,7 +1144,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2020-07-17 17:27:54.740  INFO 6720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:27:54.740  INFO 6720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:27:54.748  INFO 6720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 17:27:54.800  INFO 6720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:27:54.800  INFO 6720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:27:54.804  INFO 6720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:27:54.948 ERROR 6720 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -1298,7 +1298,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-07-17 17:28:12.508  INFO 6720 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:28:12.508  INFO 6720 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:28:12.509  INFO 6720 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:28:12.528 ERROR 6720 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -1452,7 +1452,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
 	at java.lang.Thread.run(Thread.java:748)
 
-2020-07-17 17:28:12.541  INFO 6720 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:28:12.541  INFO 6720 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:28:12.541  INFO 6720 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:28:12.552 ERROR 6720 --- [http-nio-8080-exec-4] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-4] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -1637,7 +1637,7 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2020-07-17 17:28:48.446  INFO 2276 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:28:48.446  INFO 2276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:28:48.456  INFO 2276 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 17:28:48.512  INFO 2276 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:28:48.512  INFO 2276 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:28:48.515  INFO 2276 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:28:48.659 ERROR 2276 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -1822,9 +1822,9 @@ org.thymeleaf.exceptions.TemplateInputException: Error resolving template [_frag
 2020-07-17 17:30:12.784  INFO 1544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:30:12.785  INFO 1544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:30:12.791  INFO 1544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 17:30:12.849  INFO 1544 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 17:30:12.849  INFO 1544 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 17:30:12.853  INFO 1544 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 17:30:14.746  INFO 1544 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:30:14.746  INFO 1544 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:30:14.747  INFO 1544 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:30:14.820 ERROR 1544 --- [http-nio-8080-exec-5] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-5] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -2056,7 +2056,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:30:51.338  INFO 16572 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:30:51.338  INFO 16572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:30:51.345  INFO 16572 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:30:51.396  INFO 16572 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:30:51.396  INFO 16572 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:30:51.399  INFO 16572 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:30:51.710 ERROR 16572 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -2288,7 +2288,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:31:10.708  INFO 17684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:31:10.708  INFO 17684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:31:10.716  INFO 17684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 17:31:10.778  INFO 17684 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:31:10.778  INFO 17684 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:31:10.782  INFO 17684 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:31:11.161 ERROR 17684 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -2520,7 +2520,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:32:44.294  INFO 4672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:32:44.294  INFO 4672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:32:44.311  INFO 4672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
-2020-07-17 17:32:44.360  INFO 4672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:32:44.360  INFO 4672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:32:44.363  INFO 4672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:32:44.663 ERROR 4672 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -2752,7 +2752,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:33:28.726  INFO 9256 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:33:28.727  INFO 9256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:33:28.734  INFO 9256 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:33:28.796  INFO 9256 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:33:28.796  INFO 9256 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:33:28.801  INFO 9256 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:33:29.111 ERROR 9256 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -2984,7 +2984,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:34:07.996  INFO 2968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:34:07.996  INFO 2968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:34:08.007  INFO 2968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-07-17 17:34:08.062  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:34:08.062  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:34:08.066  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:34:08.405 ERROR 2968 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -3216,7 +3216,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:34:37.918  INFO 5264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:34:37.918  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:34:37.927  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 17:34:38.006  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:34:38.006  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:34:38.009  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:34:38.452 ERROR 5264 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -3448,7 +3448,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:34:55.733  INFO 12912 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:34:55.733  INFO 12912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:34:55.741  INFO 12912 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 17:34:55.803  INFO 12912 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:34:55.803  INFO 12912 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:34:55.808  INFO 12912 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:34:56.273 ERROR 12912 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -3680,7 +3680,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:37:31.934  INFO 18096 --- [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:37:31.934  INFO 18096 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:37:31.943  INFO 18096 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-17 17:37:31.994  INFO 18096 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:37:31.994  INFO 18096 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:37:31.998  INFO 18096 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:37:32.396 ERROR 18096 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -3912,7 +3912,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:53:58.279  INFO 6104 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:53:58.279  INFO 6104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:53:58.286  INFO 6104 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:53:58.335  INFO 6104 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:53:58.335  INFO 6104 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:53:58.338  INFO 6104 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:53:58.657 ERROR 6104 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -4144,7 +4144,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:58:02.298  INFO 5760 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:58:02.298  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:58:02.305  INFO 5760 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:58:02.358  INFO 5760 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:58:02.358  INFO 5760 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:58:02.360  INFO 5760 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:58:02.680 ERROR 5760 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -4376,7 +4376,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:58:43.367  INFO 2268 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:58:43.368  INFO 2268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:58:43.376  INFO 2268 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 17:58:43.434  INFO 2268 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 17:58:43.434  INFO 2268 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 17:58:43.438  INFO 2268 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-17 17:59:18.194  INFO 12836 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 12836 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 17:59:18.206 DEBUG 12836 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -4409,7 +4409,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 17:59:23.637  INFO 12836 --- [http-nio-8080-exec-9] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 17:59:23.637  INFO 12836 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 17:59:23.644  INFO 12836 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 17:59:25.028  INFO 12836 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 17:59:25.028  INFO 12836 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 17:59:25.031  INFO 12836 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 17:59:25.321 ERROR 12836 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -4641,7 +4641,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:00:21.896  INFO 17352 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:00:21.896  INFO 17352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:00:21.903  INFO 17352 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:00:21.953  INFO 17352 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:00:21.953  INFO 17352 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:00:21.957  INFO 17352 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:00:22.260 ERROR 17352 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -4873,7 +4873,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:02:38.949  INFO 16428 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:02:38.949  INFO 16428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:02:38.956  INFO 16428 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:02:39.005  INFO 16428 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:02:39.005  INFO 16428 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:02:39.008  INFO 16428 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:03:03.797  INFO 16556 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 16556 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:03:03.798 DEBUG 16556 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -4906,7 +4906,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:03:08.836  INFO 16556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:03:08.836  INFO 16556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:03:08.843  INFO 16556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:03:08.891  INFO 16556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:03:08.891  INFO 16556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:03:08.895  INFO 16556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:03:35.142  INFO 17596 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17596 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:03:35.142 DEBUG 17596 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -4939,7 +4939,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:03:40.498  INFO 17596 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:03:40.498  INFO 17596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:03:40.505  INFO 17596 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:03:40.558  INFO 17596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:03:40.558  INFO 17596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:03:40.562  INFO 17596 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:04:29.007  INFO 9904 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9904 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:04:29.007 DEBUG 9904 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -4972,7 +4972,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:04:33.523  INFO 9904 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:04:33.523  INFO 9904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:04:33.530  INFO 9904 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:04:33.579  INFO 9904 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:04:33.579  INFO 9904 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:04:33.583  INFO 9904 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:05:22.701  INFO 10664 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 10664 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:05:22.701 DEBUG 10664 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5005,7 +5005,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:05:27.214  INFO 10664 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:05:27.214  INFO 10664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:05:27.220  INFO 10664 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 18:05:27.273  INFO 10664 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:05:27.273  INFO 10664 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:05:27.278  INFO 10664 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:05:49.894  INFO 5704 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5704 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:05:49.894 DEBUG 5704 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5038,7 +5038,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:05:54.138  INFO 5704 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:05:54.138  INFO 5704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:05:54.145  INFO 5704 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:05:54.197  INFO 5704 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:05:54.197  INFO 5704 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:05:54.201  INFO 5704 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:07:22.739  INFO 4844 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4844 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:07:22.739 DEBUG 4844 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5071,7 +5071,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:07:30.089  INFO 4844 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:07:30.089  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:07:30.101  INFO 4844 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-07-17 18:07:30.169  INFO 4844 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:07:30.169  INFO 4844 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:07:30.174  INFO 4844 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:08:47.868  INFO 16480 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 16480 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:08:47.879 DEBUG 16480 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5104,7 +5104,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:08:52.129  INFO 16480 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:08:52.129  INFO 16480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:08:52.136  INFO 16480 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:08:52.186  INFO 16480 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:08:52.186  INFO 16480 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:08:52.190  INFO 16480 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:09:18.588  INFO 9228 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9228 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:09:18.591 DEBUG 9228 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5137,7 +5137,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:09:22.391  INFO 9228 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:09:22.392  INFO 9228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:09:22.398  INFO 9228 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 18:09:22.452  INFO 9228 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:09:22.452  INFO 9228 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:09:22.456  INFO 9228 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:09:50.806  INFO 15204 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 15204 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:09:50.806 DEBUG 15204 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5170,9 +5170,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:09:58.116  INFO 15204 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:09:58.116  INFO 15204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:09:58.123  INFO 15204 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:09:58.186  INFO 15204 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:09:58.186  INFO 15204 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:09:58.190  INFO 15204 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 18:10:10.496  INFO 15204 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:10:10.496  INFO 15204 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:10:10.496  INFO 15204 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:12:31.823  INFO 5924 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5924 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:12:31.823 DEBUG 5924 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5205,7 +5205,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:12:42.841  INFO 5924 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:12:42.841  INFO 5924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:12:42.849  INFO 5924 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 18:12:42.901  INFO 5924 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:12:42.901  INFO 5924 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:12:42.909  INFO 5924 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:14:13.137  INFO 17716 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17716 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:14:13.147 DEBUG 17716 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5238,7 +5238,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:14:19.576  INFO 17716 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:14:19.577  INFO 17716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:14:19.583  INFO 17716 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 18:14:19.632  INFO 17716 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:14:19.632  INFO 17716 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:14:19.636  INFO 17716 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:18:15.381  INFO 5264 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5264 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:18:15.384 DEBUG 5264 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5271,7 +5271,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:18:21.746  INFO 5264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:18:21.746  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:18:21.753  INFO 5264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:18:21.803  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:18:21.803  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:18:21.807  INFO 5264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:23:46.025  INFO 2672 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 2672 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:23:46.027 DEBUG 2672 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5304,7 +5304,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:23:52.324  INFO 2672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:23:52.325  INFO 2672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:23:52.332  INFO 2672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:23:52.395  INFO 2672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:23:52.395  INFO 2672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:23:52.399  INFO 2672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:24:52.284  INFO 2340 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 2340 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:24:52.294 DEBUG 2340 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5337,7 +5337,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:24:56.496  INFO 2340 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:24:56.496  INFO 2340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:24:56.505  INFO 2340 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-17 18:24:56.583  INFO 2340 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:24:56.583  INFO 2340 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:24:56.588  INFO 2340 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:30:24.040  INFO 5672 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5672 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:30:24.040 DEBUG 5672 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5370,11 +5370,11 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:30:30.673  INFO 5672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:30:30.673  INFO 5672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:30:30.680  INFO 5672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:30:30.731  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:30:30.731  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:30:30.734  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 18:32:18.581  INFO 5672 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:32:18.581  INFO 5672 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:32:18.582  INFO 5672 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 18:33:33.267  INFO 5672 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:33:33.267  INFO 5672 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:33:33.268  INFO 5672 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:33:42.934  INFO 14008 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 14008 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:33:42.936 DEBUG 14008 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5407,7 +5407,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:33:49.515  INFO 14008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:33:49.515  INFO 14008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:33:49.522  INFO 14008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:33:49.575  INFO 14008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:33:49.575  INFO 14008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:33:49.579  INFO 14008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:34:08.591  INFO 2364 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 2364 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:34:08.591 DEBUG 2364 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5440,9 +5440,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:34:24.539  INFO 2364 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:34:24.540  INFO 2364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:34:24.548  INFO 2364 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 18:34:24.617  INFO 2364 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 18:34:24.617  INFO 2364 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 18:34:24.620  INFO 2364 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 18:34:28.576  INFO 2364 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:34:28.576  INFO 2364 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:34:28.577  INFO 2364 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:35:24.235  INFO 16992 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 16992 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:35:24.237 DEBUG 16992 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5475,9 +5475,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:35:30.800  INFO 16992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:35:30.800  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:35:30.807  INFO 16992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:35:30.863  INFO 16992 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:35:30.863  INFO 16992 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:35:30.869  INFO 16992 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 18:35:42.144  INFO 16992 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:35:42.144  INFO 16992 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:35:42.145  INFO 16992 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:42:19.064  INFO 9876 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9876 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:42:19.064 DEBUG 9876 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5510,9 +5510,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:42:32.980  INFO 9876 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:42:32.980  INFO 9876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:42:32.987  INFO 9876 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:42:33.037  INFO 9876 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:42:33.037  INFO 9876 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:42:33.041  INFO 9876 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 18:43:12.364  INFO 9876 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:43:12.364  INFO 9876 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:43:12.364  INFO 9876 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:45:03.643  INFO 4284 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4284 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:45:03.643 DEBUG 4284 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5545,7 +5545,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:45:09.210  INFO 4284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:45:09.210  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:45:09.217  INFO 4284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:45:09.266  INFO 4284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:45:09.266  INFO 4284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:45:09.269  INFO 4284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:46:12.613  INFO 5556 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5556 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:46:12.613 DEBUG 5556 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5578,7 +5578,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:46:17.063  INFO 5556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:46:17.063  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:46:17.070  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 18:46:17.123  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:46:17.123  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:46:17.126  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:46:39.971  INFO 13088 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 13088 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:46:39.971 DEBUG 13088 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5611,7 +5611,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:46:44.629  INFO 13088 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:46:44.629  INFO 13088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:46:44.637  INFO 13088 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 18:46:44.699  INFO 13088 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:46:44.699  INFO 13088 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:46:44.703  INFO 13088 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:51:32.993  INFO 5672 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5672 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:51:32.993 DEBUG 5672 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5644,7 +5644,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:51:36.831  INFO 5672 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:51:36.832  INFO 5672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:51:36.842  INFO 5672 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 18:51:36.907  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:51:36.907  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:51:36.910  INFO 5672 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:58:55.902  INFO 4184 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4184 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 18:58:55.902 DEBUG 4184 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -5677,7 +5677,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 18:59:11.781  INFO 4184 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 18:59:11.781  INFO 4184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 18:59:11.788  INFO 4184 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 18:59:11.838  INFO 4184 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 18:59:11.838  INFO 4184 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 18:59:11.842  INFO 4184 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 18:59:12.102 ERROR 4184 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -5890,7 +5890,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:00:41.017  INFO 17260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:00:41.017  INFO 17260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:00:41.025  INFO 17260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 19:00:41.078  INFO 17260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:00:41.078  INFO 17260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:00:41.082  INFO 17260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:00:41.362 ERROR 17260 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -6103,7 +6103,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:01:46.860  INFO 16612 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:01:46.860  INFO 16612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:01:46.867  INFO 16612 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 19:01:46.916  INFO 16612 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:01:46.916  INFO 16612 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:01:46.919  INFO 16612 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:01:47.186 ERROR 16612 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -6285,7 +6285,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-17 19:01:47.215 ERROR 16612 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
-2020-07-17 19:01:54.317  INFO 16612 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:01:54.317  INFO 16612 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:01:54.318  INFO 16612 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:01:54.336 ERROR 16612 --- [http-nio-8080-exec-2] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-2] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -6498,7 +6498,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:02:28.144  INFO 13960 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:02:28.144  INFO 13960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:02:28.151  INFO 13960 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:02:28.205  INFO 13960 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:02:28.205  INFO 13960 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:02:28.210  INFO 13960 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:02:28.489 ERROR 13960 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -6711,7 +6711,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:03:43.767  INFO 16896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:03:43.768  INFO 16896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:03:43.775  INFO 16896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:03:43.823  INFO 16896 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:03:43.823  INFO 16896 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:03:43.827  INFO 16896 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:03:44.122 ERROR 16896 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -6924,7 +6924,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:04:23.306  INFO 4504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:04:23.306  INFO 4504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:04:23.313  INFO 4504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:04:23.365  INFO 4504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:04:23.365  INFO 4504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:04:23.370  INFO 4504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:04:23.652 ERROR 4504 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -7106,7 +7106,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-17 19:04:23.687 ERROR 4504 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
-2020-07-17 19:04:31.580  INFO 4504 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:04:31.580  INFO 4504 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:04:31.580  INFO 4504 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:04:31.604 ERROR 4504 --- [http-nio-8080-exec-9] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-9] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -7319,7 +7319,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:05:33.444  INFO 5832 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:05:33.444  INFO 5832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:05:33.451  INFO 5832 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:05:33.503  INFO 5832 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:05:33.503  INFO 5832 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:05:33.508  INFO 5832 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:05:33.802 ERROR 5832 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -7532,7 +7532,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:06:03.610  INFO 16808 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:06:03.610  INFO 16808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:06:03.616  INFO 16808 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 19:06:03.665  INFO 16808 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:06:03.665  INFO 16808 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:06:03.669  INFO 16808 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:06:03.950 ERROR 16808 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -7745,7 +7745,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:06:27.731  INFO 7504 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:06:27.731  INFO 7504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:06:27.738  INFO 7504 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 19:06:27.790  INFO 7504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:06:27.790  INFO 7504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:06:27.794  INFO 7504 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:06:28.085 ERROR 7504 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -7927,7 +7927,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-17 19:06:28.112 ERROR 7504 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
-2020-07-17 19:06:33.105  INFO 7504 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:06:33.105  INFO 7504 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:06:33.105  INFO 7504 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:06:33.129 ERROR 7504 --- [http-nio-8080-exec-10] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-10] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -8171,7 +8171,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:07:14.871  INFO 17008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:07:14.871  INFO 17008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:07:14.878  INFO 17008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:07:14.929  INFO 17008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:07:14.929  INFO 17008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:07:14.933  INFO 17008 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:07:15.215 ERROR 17008 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -8353,7 +8353,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-17 19:07:15.243 ERROR 17008 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/blog] and exception [An error happened during template parsing (template: "class path resource [templates/blog.html]")] as the response has already been committed. As a result, the response may have the wrong status code.
-2020-07-17 19:07:30.359  INFO 17008 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:07:30.359  INFO 17008 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:07:30.359  INFO 17008 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:07:30.377 ERROR 17008 --- [http-nio-8080-exec-6] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-6] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -8566,7 +8566,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:07:38.881  INFO 5556 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:07:38.881  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:07:38.893  INFO 5556 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-07-17 19:07:38.965  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:07:38.965  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:07:38.965  INFO 5556 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:07:39.272 ERROR 5556 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -8810,9 +8810,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:10:01.027  INFO 2688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:10:01.028  INFO 2688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:10:01.034  INFO 2688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 19:10:01.085  INFO 2688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 19:10:01.085  INFO 2688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 19:10:01.088  INFO 2688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 19:10:13.879  INFO 2688 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:10:13.879  INFO 2688 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:10:13.879  INFO 2688 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:10:13.940 ERROR 2688 --- [http-nio-8080-exec-3] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-3] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -9025,7 +9025,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:10:43.992  INFO 15096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:10:43.992  INFO 15096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:10:44.002  INFO 15096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 19:10:44.055  INFO 15096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:10:44.055  INFO 15096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:10:44.063  INFO 15096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:10:44.325 ERROR 15096 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -9238,15 +9238,15 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:11:28.810  INFO 16372 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:11:28.810  INFO 16372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:11:28.817  INFO 16372 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:11:28.876  INFO 16372 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:11:28.876  INFO 16372 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:11:28.879  INFO 16372 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 19:11:47.080  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:11:47.080  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:11:47.080  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 19:11:48.470  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:11:48.470  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:11:48.470  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 19:11:49.377  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:11:49.377  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:11:49.378  INFO 16372 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 19:11:50.727  INFO 16372 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:11:50.727  INFO 16372 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:11:50.727  INFO 16372 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:14:58.688  INFO 7732 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 7732 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:14:58.688 DEBUG 7732 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9279,7 +9279,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:15:02.804  INFO 7732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:15:02.804  INFO 7732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:15:02.811  INFO 7732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:15:02.859  INFO 7732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:15:02.859  INFO 7732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:15:02.864  INFO 7732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:15:49.993  INFO 5772 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5772 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:15:50.003 DEBUG 5772 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9312,7 +9312,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:15:55.525  INFO 5772 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:15:55.525  INFO 5772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:15:55.532  INFO 5772 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:15:55.580  INFO 5772 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:15:55.580  INFO 5772 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:15:55.583  INFO 5772 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:31:35.113  INFO 17788 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17788 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:31:35.113 DEBUG 17788 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9345,7 +9345,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:31:43.031  INFO 17788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:31:43.032  INFO 17788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:31:43.039  INFO 17788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:31:43.091  INFO 17788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:31:43.091  INFO 17788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:31:43.095  INFO 17788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:34:07.438  INFO 17332 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17332 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:34:07.438 DEBUG 17332 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9378,7 +9378,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:34:17.549  INFO 17332 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:34:17.549  INFO 17332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:34:17.556  INFO 17332 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:34:17.620  INFO 17332 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:34:17.620  INFO 17332 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:34:17.623  INFO 17332 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:35:26.816  INFO 10140 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 10140 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:35:26.819 DEBUG 10140 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9411,7 +9411,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:35:29.038  INFO 10140 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:35:29.038  INFO 10140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:35:29.045  INFO 10140 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:35:29.094  INFO 10140 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:35:29.094  INFO 10140 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:35:29.097  INFO 10140 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:36:56.688  INFO 18092 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18092 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:36:56.688 DEBUG 18092 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9444,7 +9444,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:37:00.766  INFO 18092 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:37:00.767  INFO 18092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:37:00.774  INFO 18092 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:37:00.837  INFO 18092 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:37:00.837  INFO 18092 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:37:00.843  INFO 18092 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:38:51.876  INFO 10144 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 10144 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:38:51.888 DEBUG 10144 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9477,7 +9477,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:38:53.790  INFO 10144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:38:53.791  INFO 10144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:38:53.798  INFO 10144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 19:38:53.850  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:38:53.850  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:38:53.854  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 19:44:49.574  INFO 1268 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1268 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 19:44:49.577 DEBUG 1268 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9538,9 +9538,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 19:53:11.407  INFO 14728 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 19:53:11.407  INFO 14728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 19:53:11.415  INFO 14728 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 19:53:11.464  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 19:53:11.464  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 19:53:11.474  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 19:53:16.056  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 19:53:16.056  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 19:53:16.056  INFO 14728 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:02:10.148  INFO 17688 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17688 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:02:10.150 DEBUG 17688 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9573,7 +9573,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:02:17.112  INFO 17688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:02:17.112  INFO 17688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:02:17.119  INFO 17688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:02:17.170  INFO 17688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:02:17.170  INFO 17688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:02:17.174  INFO 17688 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:06:17.056  INFO 524 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 524 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:06:17.067 DEBUG 524 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9606,7 +9606,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:06:22.481  INFO 524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:06:22.481  INFO 524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:06:22.490  INFO 524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:06:22.544  INFO 524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:06:22.544  INFO 524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:06:22.549  INFO 524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:09:48.023  INFO 9860 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9860 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:09:48.023 DEBUG 9860 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9639,7 +9639,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:09:52.078  INFO 9860 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:09:52.078  INFO 9860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:09:52.086  INFO 9860 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:09:52.141  INFO 9860 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:09:52.141  INFO 9860 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:09:52.144  INFO 9860 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:10:44.103  INFO 14680 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 14680 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:10:44.103 DEBUG 14680 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9672,13 +9672,13 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:10:48.721  INFO 14680 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:10:48.721  INFO 14680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:10:48.729  INFO 14680 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:10:48.794  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:10:48.794  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:10:48.797  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:11:00.630  INFO 14680 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:11:00.630  INFO 14680 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:11:00.630  INFO 14680 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:11:17.840  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:11:17.840  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:11:17.840  INFO 14680 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:11:31.535  INFO 14680 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:11:31.535  INFO 14680 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:11:31.535  INFO 14680 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:12:27.781  INFO 2968 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 2968 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:12:27.783 DEBUG 2968 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9711,7 +9711,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:12:32.811  INFO 2968 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:12:32.812  INFO 2968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:12:32.819  INFO 2968 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:12:32.878  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:12:32.878  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:12:32.882  INFO 2968 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:15:58.319  INFO 18236 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18236 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:15:58.319 DEBUG 18236 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9744,7 +9744,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:16:03.125  INFO 18236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:16:03.126  INFO 18236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:16:03.134  INFO 18236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:16:03.189  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:16:03.189  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:16:03.193  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:20:26.388  INFO 17524 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17524 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:20:26.390 DEBUG 17524 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9777,7 +9777,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:20:30.525  INFO 17524 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:20:30.525  INFO 17524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:20:30.533  INFO 17524 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:20:30.595  INFO 17524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:20:30.595  INFO 17524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:20:30.599  INFO 17524 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:22:32.826  INFO 1536 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1536 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:22:32.827 DEBUG 1536 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9810,15 +9810,15 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:22:38.271  INFO 1536 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:22:38.271  INFO 1536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:22:38.279  INFO 1536 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:22:38.328  INFO 1536 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 20:22:38.328  INFO 1536 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 20:22:38.333  INFO 1536 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 20:22:45.817  INFO 1536 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:22:45.817  INFO 1536 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:22:45.818  INFO 1536 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:23:08.751  INFO 1536 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:23:08.751  INFO 1536 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:23:08.751  INFO 1536 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:23:12.558  INFO 1536 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:23:12.558  INFO 1536 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:23:12.559  INFO 1536 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 20:23:14.767  INFO 1536 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:23:14.767  INFO 1536 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:23:14.768  INFO 1536 --- [http-nio-8080-exec-2] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:24:21.324  INFO 18236 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18236 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:24:21.329 DEBUG 18236 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9851,7 +9851,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:24:32.460  INFO 18236 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:24:32.461  INFO 18236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:24:32.467  INFO 18236 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 20:24:32.516  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:24:32.516  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:24:32.519  INFO 18236 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:25:42.554  INFO 1244 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1244 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:25:42.554 DEBUG 1244 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9884,7 +9884,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:25:51.987  INFO 1244 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:25:51.988  INFO 1244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:25:51.995  INFO 1244 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:25:52.046  INFO 1244 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:25:52.046  INFO 1244 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:25:52.050  INFO 1244 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:27:40.985  INFO 17028 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17028 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:27:40.997 DEBUG 17028 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9917,7 +9917,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:27:45.325  INFO 17028 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:27:45.325  INFO 17028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:27:45.333  INFO 17028 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 20:27:45.398  INFO 17028 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:27:45.398  INFO 17028 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:27:45.402  INFO 17028 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:29:12.403  INFO 14784 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 14784 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:29:12.403 DEBUG 14784 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9950,7 +9950,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:29:16.954  INFO 14784 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:29:16.954  INFO 14784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:29:16.961  INFO 14784 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:29:17.013  INFO 14784 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:29:17.013  INFO 14784 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:29:17.017  INFO 14784 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:30:30.169  INFO 920 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 920 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:30:30.169 DEBUG 920 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -9983,7 +9983,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:30:34.667  INFO 920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:30:34.668  INFO 920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:30:34.675  INFO 920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:30:34.724  INFO 920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:30:34.724  INFO 920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:30:34.727  INFO 920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:30:35.010 ERROR 920 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "blog": An error happened during template parsing (template: "class path resource [templates/blog.html]")
 
@@ -10196,7 +10196,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:31:00.739  INFO 3812 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:31:00.740  INFO 3812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:31:00.747  INFO 3812 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:31:00.796  INFO 3812 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:31:00.796  INFO 3812 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:31:00.799  INFO 3812 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:33:15.852  INFO 6124 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 6124 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:33:15.852 DEBUG 6124 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10229,7 +10229,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:33:20.443  INFO 6124 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:33:20.443  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:33:20.450  INFO 6124 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:33:20.515  INFO 6124 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:33:20.515  INFO 6124 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:33:20.519  INFO 6124 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:39:40.067  INFO 17116 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 17116 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:39:40.069 DEBUG 17116 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10262,7 +10262,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:39:44.364  INFO 17116 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:39:44.364  INFO 17116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:39:44.371  INFO 17116 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:39:44.418  INFO 17116 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:39:44.418  INFO 17116 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:39:44.421  INFO 17116 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:40:24.483  INFO 1284 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1284 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:40:24.485 DEBUG 1284 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10295,7 +10295,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:40:27.472  INFO 1284 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:40:27.472  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:40:27.485  INFO 1284 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 12 ms
-2020-07-17 20:40:27.572  INFO 1284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:40:27.572  INFO 1284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:40:27.593  INFO 1284 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:42:18.998  INFO 1096 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1096 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:42:19.001 DEBUG 1096 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10328,7 +10328,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:42:23.645  INFO 1096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:42:23.645  INFO 1096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:42:23.652  INFO 1096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:42:23.706  INFO 1096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:42:23.706  INFO 1096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:42:23.710  INFO 1096 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:44:25.841  INFO 6500 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 6500 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:44:25.843 DEBUG 6500 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10361,7 +10361,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:44:30.769  INFO 6500 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:44:30.769  INFO 6500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:44:30.776  INFO 6500 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:44:30.824  INFO 6500 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:44:30.824  INFO 6500 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:44:30.828  INFO 6500 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:44:52.125  INFO 6076 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 6076 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:44:52.126 DEBUG 6076 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10394,7 +10394,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:44:59.040  INFO 6076 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:44:59.041  INFO 6076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:44:59.048  INFO 6076 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:44:59.101  INFO 6076 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:44:59.101  INFO 6076 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:44:59.105  INFO 6076 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:46:30.943  INFO 472 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 472 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:46:30.946 DEBUG 472 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10427,7 +10427,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:46:33.615  INFO 472 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:46:33.615  INFO 472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:46:33.625  INFO 472 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 20:46:33.712  INFO 472 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:46:33.712  INFO 472 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:46:33.716  INFO 472 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 20:50:25.270  INFO 5616 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5616 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:50:25.271 DEBUG 5616 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10460,11 +10460,11 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:50:33.126  INFO 5616 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:50:33.126  INFO 5616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:50:33.133  INFO 5616 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:50:33.196  INFO 5616 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 20:50:33.196  INFO 5616 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 20:50:33.201  INFO 5616 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 20:50:56.458  INFO 5616 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.about', args = []}
+2020-07-17 20:50:56.458  INFO 5616 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.about', args = []}
 2020-07-17 20:50:56.458  INFO 5616 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : about
-2020-07-17 20:51:15.204  INFO 5616 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:51:15.204  INFO 5616 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:51:15.204  INFO 5616 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-17 20:55:06.822  INFO 5136 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5136 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:55:06.824 DEBUG 5136 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10497,7 +10497,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:55:20.236  INFO 5136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:55:20.237  INFO 5136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:55:20.243  INFO 5136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 20:55:20.304  INFO 5136 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:55:20.304  INFO 5136 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:55:20.307  INFO 5136 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-17 20:55:39.967  INFO 18060 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18060 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:55:39.968 DEBUG 18060 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10530,11 +10530,11 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:55:48.709  INFO 18060 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:55:48.709  INFO 18060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:55:48.716  INFO 18060 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:55:48.767  INFO 18060 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:55:48.767  INFO 18060 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:55:48.771  INFO 18060 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 20:55:51.533  INFO 18060 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:55:51.533  INFO 18060 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:55:51.533  INFO 18060 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 20:56:10.777  INFO 18060 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:56:10.777  INFO 18060 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:56:10.777  INFO 18060 --- [http-nio-8080-exec-6] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-17 20:56:17.336  INFO 7056 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 7056 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 20:56:17.339 DEBUG 7056 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10567,9 +10567,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 20:56:41.025  INFO 7056 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 20:56:41.025  INFO 7056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 20:56:41.032  INFO 7056 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 20:56:41.080  INFO 7056 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 20:56:41.080  INFO 7056 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 20:56:41.084  INFO 7056 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 20:57:12.581  INFO 7056 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 20:57:12.581  INFO 7056 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 20:57:12.581  INFO 7056 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 21:01:30.558  INFO 2120 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 2120 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:01:30.560 DEBUG 2120 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10602,11 +10602,11 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:01:39.020  INFO 2120 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:01:39.021  INFO 2120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:01:39.027  INFO 2120 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 21:01:39.077  INFO 2120 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:01:39.077  INFO 2120 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:01:39.081  INFO 2120 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 21:02:10.732  INFO 2120 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.friends', args = []}
+2020-07-17 21:02:10.732  INFO 2120 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.friends', args = []}
 2020-07-17 21:02:10.732  INFO 2120 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : friends
-2020-07-17 21:02:30.509  INFO 2120 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 21:02:30.509  INFO 2120 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 21:02:30.509  INFO 2120 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-17 21:06:01.862  INFO 7628 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 7628 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:06:01.864 DEBUG 7628 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10639,7 +10639,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:06:10.475  INFO 7628 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:06:10.476  INFO 7628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:06:10.485  INFO 7628 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-17 21:06:10.538  INFO 7628 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:06:10.538  INFO 7628 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:06:10.543  INFO 7628 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-17 21:06:55.551  INFO 3396 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 3396 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:06:55.553 DEBUG 3396 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10672,9 +10672,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:07:00.640  INFO 3396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:07:00.640  INFO 3396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:07:00.648  INFO 3396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 21:07:00.699  INFO 3396 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:07:00.699  INFO 3396 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:07:00.704  INFO 3396 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 21:07:17.815  INFO 3396 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.friends', args = []}
+2020-07-17 21:07:17.815  INFO 3396 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.friends', args = []}
 2020-07-17 21:07:17.815  INFO 3396 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : friends
 2020-07-17 21:16:42.251  INFO 4080 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4080 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:16:42.253 DEBUG 4080 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10707,9 +10707,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:17:09.356  INFO 4080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:17:09.356  INFO 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:17:09.363  INFO 4080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 21:17:09.415  INFO 4080 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:17:09.415  INFO 4080 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:17:09.419  INFO 4080 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 21:18:15.004  INFO 4080 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 21:18:15.004  INFO 4080 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 21:18:15.005  INFO 4080 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 21:21:17.941  INFO 14056 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 14056 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:21:17.943 DEBUG 14056 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10770,9 +10770,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:24:57.547  INFO 15732 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:24:57.547  INFO 15732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:24:57.557  INFO 15732 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
-2020-07-17 21:24:57.624  INFO 15732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 21:24:57.624  INFO 15732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 21:24:57.628  INFO 15732 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 21:25:04.444  INFO 15732 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 21:25:04.444  INFO 15732 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 21:25:04.444  INFO 15732 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 21:32:21.882  INFO 8208 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 8208 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:32:21.886 DEBUG 8208 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10805,7 +10805,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:32:31.764  INFO 8208 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:32:31.764  INFO 8208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:32:31.772  INFO 8208 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 21:32:31.824  INFO 8208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:32:31.824  INFO 8208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:32:31.828  INFO 8208 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-17 21:43:45.384  INFO 4840 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4840 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:43:45.386 DEBUG 4840 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10838,15 +10838,15 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:43:50.634  INFO 4840 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:43:50.634  INFO 4840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:43:50.643  INFO 4840 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-17 21:43:50.704  INFO 4840 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-17 21:43:50.704  INFO 4840 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-17 21:43:50.708  INFO 4840 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : archives
-2020-07-17 21:43:53.642  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 21:43:53.642  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 21:43:53.642  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 21:44:02.054  INFO 4840 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.about', args = []}
+2020-07-17 21:44:02.054  INFO 4840 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.about', args = []}
 2020-07-17 21:44:02.055  INFO 4840 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : about
-2020-07-17 21:44:18.787  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 21:44:18.787  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 21:44:18.787  INFO 4840 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 21:44:29.675  INFO 4840 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.friends', args = []}
+2020-07-17 21:44:29.675  INFO 4840 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.friends', args = []}
 2020-07-17 21:44:29.675  INFO 4840 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : friends
 2020-07-17 21:45:08.275  INFO 9720 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9720 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:45:08.277 DEBUG 9720 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10879,9 +10879,9 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:45:13.027  INFO 9720 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:45:13.027  INFO 9720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:45:13.035  INFO 9720 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-17 21:45:13.102  INFO 9720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.friends', args = []}
+2020-07-17 21:45:13.102  INFO 9720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/friends', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.friends', args = []}
 2020-07-17 21:45:13.107  INFO 9720 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : friends
-2020-07-17 21:45:20.929  INFO 9720 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.message', args = []}
+2020-07-17 21:45:20.929  INFO 9720 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.message', args = []}
 2020-07-17 21:45:20.930  INFO 9720 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : message
 2020-07-17 21:47:04.887  INFO 5380 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5380 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:47:04.889 DEBUG 5380 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10914,7 +10914,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:47:08.917  INFO 5380 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:47:08.917  INFO 5380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:47:08.924  INFO 5380 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 21:47:08.984  INFO 5380 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.message', args = []}
+2020-07-17 21:47:08.984  INFO 5380 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.message', args = []}
 2020-07-17 21:47:08.989  INFO 5380 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : message
 2020-07-17 21:56:39.362  INFO 16920 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 16920 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 21:56:39.365 DEBUG 16920 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -10947,19 +10947,19 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 21:56:43.663  INFO 16920 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 21:56:43.664  INFO 16920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 21:56:43.671  INFO 16920 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 21:56:43.720  INFO 16920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.message', args = []}
+2020-07-17 21:56:43.720  INFO 16920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/message', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.message', args = []}
 2020-07-17 21:56:43.724  INFO 16920 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : message
-2020-07-17 21:56:55.903  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/picture', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.picture', args = []}
+2020-07-17 21:56:55.903  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/picture', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.picture', args = []}
 2020-07-17 21:56:55.903  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : picture
-2020-07-17 21:57:14.004  INFO 16920 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/search', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.search', args = []}
+2020-07-17 21:57:14.004  INFO 16920 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/search', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.search', args = []}
 2020-07-17 21:57:14.005  INFO 16920 --- [http-nio-8080-exec-7] com.hsjnb.aspect.LogAspect               : Result : search
-2020-07-17 21:57:24.709  INFO 16920 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/tags', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.tags', args = []}
+2020-07-17 21:57:24.709  INFO 16920 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/tags', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.tags', args = []}
 2020-07-17 21:57:24.709  INFO 16920 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : tags
-2020-07-17 21:57:31.990  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/types', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.types', args = []}
+2020-07-17 21:57:31.990  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/types', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.types', args = []}
 2020-07-17 21:57:31.991  INFO 16920 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : types
-2020-07-17 21:57:59.088  INFO 16920 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 21:57:59.088  INFO 16920 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 21:57:59.089  INFO 16920 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 21:58:05.196  INFO 16920 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.music', args = []}
+2020-07-17 21:58:05.196  INFO 16920 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.music', args = []}
 2020-07-17 21:58:05.196  INFO 16920 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : music
 2020-07-17 22:26:48.885  INFO 9716 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9716 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 22:26:48.887 DEBUG 9716 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -11020,15 +11020,15 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 22:36:39.240  INFO 15756 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 22:36:39.240  INFO 15756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 22:36:39.247  INFO 15756 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 22:36:39.298  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-17 22:36:39.298  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-17 22:36:39.302  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-17 22:38:50.413  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.music', args = []}
+2020-07-17 22:38:50.413  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.music', args = []}
 2020-07-17 22:38:50.413  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : music
-2020-07-17 22:39:42.375  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 22:39:42.375  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 22:39:42.375  INFO 15756 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 22:39:55.162  INFO 15756 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 22:39:55.162  INFO 15756 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 22:39:55.162  INFO 15756 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 22:47:18.042  INFO 15756 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 22:47:18.042  INFO 15756 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 22:47:18.042  INFO 15756 --- [http-nio-8080-exec-4] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 23:05:57.771  INFO 5156 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 5156 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 23:05:57.772 DEBUG 5156 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -11061,7 +11061,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 23:06:01.429  INFO 5156 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 23:06:01.429  INFO 5156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 23:06:01.436  INFO 5156 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-17 23:06:01.496  INFO 5156 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 23:06:01.496  INFO 5156 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 23:06:01.500  INFO 5156 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-17 23:27:24.394  INFO 10144 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 10144 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-17 23:27:24.396 DEBUG 10144 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -11094,7 +11094,7 @@ org.springframework.expression.spel.SpelEvaluationException: EL1007E: Property o
 2020-07-17 23:27:29.059  INFO 10144 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-17 23:27:29.060  INFO 10144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-17 23:27:29.066  INFO 10144 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
-2020-07-17 23:27:29.114  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-17 23:27:29.114  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-17 23:27:29.119  INFO 10144 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-17 23:27:37.008  INFO 10144 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.music', args = []}
+2020-07-17 23:27:37.008  INFO 10144 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/music', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.music', args = []}
 2020-07-17 23:27:37.008  INFO 10144 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : music

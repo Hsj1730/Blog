@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.Picture;
+import com.hsjnb.entity.Picture;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

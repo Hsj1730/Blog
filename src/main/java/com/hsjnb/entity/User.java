@@ -1,4 +1,4 @@
-package com.hsjnb.po;
+package com.hsjnb.entity;
 
 import javax.persistence.*;
 import java.util.ArrayList;
@@ -18,13 +18,13 @@ import java.util.List;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/18 14:27
- * @description : Comment实体类
+ * @date : Created in 2020/07/18 14:39
+ * @description : User实体类
  */
 
 @Entity
-@Table(name = "t_comment")
-public class Comment {
+@Table(name = "t_user")
+public class User {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -32,27 +32,26 @@ public class Comment {
 
     private String nickname;    //昵称
 
-    private String email;   //邮箱
+    private String username;    //用户名
 
-    private String content; //评论内容
+    private String password;    //密码
+
+    private String email;   //邮箱
 
     private String avatar;  //头像
 
+    private Integer type;   //账户类型
+
     @Temporal(TemporalType.TIMESTAMP)
-    private Date createTime;    //提交时间
+    private Date createTime;    //创作时间
 
-    private boolean adminComment;   //是否是栈主
+    @Temporal(TemporalType.TIMESTAMP)
+    private Date updateTime;    //更新时间
 
-    @ManyToOne
-    private Blog blog;
+    @OneToMany(mappedBy = "user")
+    private List<Blog> blogs = new ArrayList<>();
 
-    @OneToMany(mappedBy = "parentComment")
-    private List<Comment> replyComments = new ArrayList<>();
-
-    @ManyToOne
-    private Comment parentComment;
-
-    public Comment() {
+    public User() {
 
     }
 
@@ -72,20 +71,28 @@ public class Comment {
         this.nickname = nickname;
     }
 
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
+        this.username = username;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public void setPassword(String password) {
+        this.password = password;
+    }
+
     public String getEmail() {
         return email;
     }
 
     public void setEmail(String email) {
         this.email = email;
-    }
-
-    public String getContent() {
-        return content;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
     }
 
     public String getAvatar() {
@@ -96,6 +103,14 @@ public class Comment {
         this.avatar = avatar;
     }
 
+    public Integer getType() {
+        return type;
+    }
+
+    public void setType(Integer type) {
+        this.type = type;
+    }
+
     public Date getCreateTime() {
         return createTime;
     }
@@ -104,48 +119,34 @@ public class Comment {
         this.createTime = createTime;
     }
 
-    public boolean isAdminComment() {
-        return adminComment;
+    public Date getUpdateTime() {
+        return updateTime;
     }
 
-    public void setAdminComment(boolean adminComment) {
-        this.adminComment = adminComment;
+    public void setUpdateTime(Date updateTime) {
+        this.updateTime = updateTime;
     }
 
-    public Blog getBlog() {
-        return blog;
+    public List<Blog> getBlogs() {
+        return blogs;
     }
 
-    public void setBlog(Blog blog) {
-        this.blog = blog;
-    }
-
-    public List<Comment> getReplyComments() {
-        return replyComments;
-    }
-
-    public void setReplyComments(List<Comment> replyComments) {
-        this.replyComments = replyComments;
-    }
-
-    public Comment getParentComment() {
-        return parentComment;
-    }
-
-    public void setParentComment(Comment parentComment) {
-        this.parentComment = parentComment;
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 
     @Override
     public String toString() {
-        return "Comment{" +
+        return "User{" +
                 "id=" + id +
                 ", nickname='" + nickname + '\'' +
+                ", username='" + username + '\'' +
+                ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
-                ", content='" + content + '\'' +
                 ", avatar='" + avatar + '\'' +
+                ", type=" + type +
                 ", createTime=" + createTime +
-                ", adminComment=" + adminComment +
+                ", updateTime=" + updateTime +
                 '}';
     }
 }

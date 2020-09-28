@@ -1,6 +1,6 @@
 package com.hsjnb.dao;
 
-import com.hsjnb.po.User;
+import com.hsjnb.entity.User;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

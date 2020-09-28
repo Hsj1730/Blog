@@ -1,6 +1,6 @@
 package com.hsjnb.dao;
 
-import com.hsjnb.po.FriendLink;
+import com.hsjnb.entity.FriendLink;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 /**

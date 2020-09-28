@@ -1,8 +1,9 @@
-package com.hsjnb.po;
+package com.hsjnb.entity;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
-import java.util.Date;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -17,31 +18,25 @@ import java.util.Date;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/18 15:01
- * @description : FriendLink实体类
+ * @date : Created in 2020/07/18 14:23
+ * @description : Tag实体类
  */
 
 @Entity
-@Table(name = "t_friend")
-public class FriendLink {
+@Table(name = "t_tag")
+public class Tag {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @NotBlank(message = "博客名称不能为空")
-    private String blogName;    //博客名
+    @NotBlank(message = "标签名称不能为空")
+    private String name;
 
-    @NotBlank(message = "博客地址不能为空")
-    private String blogAddress; //博客地址
+    @ManyToMany(mappedBy = "tags")
+    private List<Blog> blogs = new ArrayList<>();
 
-    @NotBlank(message = "图片地址不能为空")
-    private String pictureAddress;  //图片地址
-
-    @Temporal(TemporalType.TIMESTAMP)
-    private Date createTime;    //添加时间
-
-    public FriendLink() {
+    public Tag() {
 
     }
 
@@ -53,46 +48,27 @@ public class FriendLink {
         this.id = id;
     }
 
-    public String getBlogName() {
-        return blogName;
+    public String getName() {
+        return name;
     }
 
-    public void setBlogName(String blogName) {
-        this.blogName = blogName;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getBlogAddress() {
-        return blogAddress;
+    public List<Blog> getBlogs() {
+        return blogs;
     }
 
-    public void setBlogAddress(String blogAddress) {
-        this.blogAddress = blogAddress;
-    }
-
-    public String getPictureAddress() {
-        return pictureAddress;
-    }
-
-    public void setPictureAddress(String pictureAddress) {
-        this.pictureAddress = pictureAddress;
-    }
-
-    public Date getCreateTime() {
-        return createTime;
-    }
-
-    public void setCreateTime(Date createTime) {
-        this.createTime = createTime;
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 
     @Override
     public String toString() {
-        return "FriendLink{" +
+        return "Tag{" +
                 "id=" + id +
-                ", blogName='" + blogName + '\'' +
-                ", blogAddress='" + blogAddress + '\'' +
-                ", pictureAddress='" + pictureAddress + '\'' +
-                ", createTime=" + createTime +
+                ", name='" + name + '\'' +
                 '}';
     }
 }

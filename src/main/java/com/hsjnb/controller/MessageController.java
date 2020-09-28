@@ -1,14 +1,12 @@
-package com.hsjnb.web;
+package com.hsjnb.controller;
 
-import com.hsjnb.po.Comment;
-import com.hsjnb.po.User;
-import com.hsjnb.service.BlogService;
-import com.hsjnb.service.CommentService;
+import com.hsjnb.entity.Message;
+import com.hsjnb.entity.User;
+import com.hsjnb.service.MessageService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 
 import javax.annotation.Resource;
@@ -27,41 +25,41 @@ import javax.servlet.http.HttpSession;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/23 10:05
+ * @date : Created in 2020/07/22 18:26
  * @description :
  */
 
 @Controller
-public class CommentController {
+public class MessageController {
 
     @Resource
-    private CommentService commentService;
+    private MessageService messageService;
 
-    @Resource
-    private BlogService blogService;
-
-    @Value("${comment.avatar}")
+    @Value("${message.avatar}")
     private String avatar;
 
-    @GetMapping("/comments/{blogId}")
-    public String comments(@PathVariable Long blogId, Model model) {
-        model.addAttribute("comments",commentService.listCommentByBlogId(blogId));
-        return "blog :: commentList";
+    //显示留言页面
+    @GetMapping("/message")
+    public String message() {
+        return "message";
     }
 
-    @PostMapping("/comments")
-    public String post(Comment comment, HttpSession session) {
-        Long blogId = comment.getBlog().getId();
-        comment.setBlog(blogService.getBlog(blogId));
+    @GetMapping("/messagecomment")
+    public String messageComment(Model model){
+        model.addAttribute("messages",messageService.listMessage());
+        return "message::messageList";
+    }
+
+    @PostMapping("/message")
+    public String post(Message message, HttpSession session){
         User user = (User) session.getAttribute("user");
         if (user != null) {
-            comment.setAvatar(user.getAvatar());
-            comment.setAdminComment(true);
+            message.setAvatar(user.getAvatar());
+            message.setAdminComment(true);
         } else {
-            comment.setAvatar(avatar);
+            message.setAvatar(avatar);
         }
-        commentService.saveComment(comment);
-        return "redirect:/comments/" + blogId;
+        messageService.saveMessage(message);
+        return "redirect:/messagecomment";
     }
-
 }

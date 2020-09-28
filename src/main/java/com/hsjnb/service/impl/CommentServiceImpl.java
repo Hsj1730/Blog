@@ -1,7 +1,8 @@
-package com.hsjnb.service;
+package com.hsjnb.service.impl;
 
 import com.hsjnb.dao.CommentRepository;
-import com.hsjnb.po.Comment;
+import com.hsjnb.entity.Comment;
+import com.hsjnb.service.CommentService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

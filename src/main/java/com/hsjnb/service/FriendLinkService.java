@@ -1,6 +1,6 @@
 package com.hsjnb.service;
 
-import com.hsjnb.po.FriendLink;
+import com.hsjnb.entity.FriendLink;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.Pageable;
 

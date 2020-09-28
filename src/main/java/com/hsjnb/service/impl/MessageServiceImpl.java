@@ -1,7 +1,8 @@
-package com.hsjnb.service;
+package com.hsjnb.service.impl;
 
 import com.hsjnb.dao.MessageRepository;
-import com.hsjnb.po.Message;
+import com.hsjnb.entity.Message;
+import com.hsjnb.service.MessageService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;

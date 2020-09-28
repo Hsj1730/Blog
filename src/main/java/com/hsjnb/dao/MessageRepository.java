@@ -1,6 +1,6 @@
 package com.hsjnb.dao;
 
-import com.hsjnb.po.Message;
+import com.hsjnb.entity.Message;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.jpa.repository.JpaRepository;
 

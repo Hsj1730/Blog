@@ -1,6 +1,6 @@
 package com.hsjnb.dao;
 
-import com.hsjnb.po.Type;
+import com.hsjnb.entity.Type;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;

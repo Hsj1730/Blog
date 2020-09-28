@@ -1,16 +1,19 @@
-package com.hsjnb.web;
+package com.hsjnb.controller;
 
-import com.hsjnb.po.Message;
-import com.hsjnb.po.User;
-import com.hsjnb.service.MessageService;
-import org.springframework.beans.factory.annotation.Value;
+import com.hsjnb.entity.Type;
+import com.hsjnb.service.BlogService;
+import com.hsjnb.service.TypeService;
+import com.hsjnb.vo.BlogQuery;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import javax.annotation.Resource;
-import javax.servlet.http.HttpSession;
+import java.util.List;
 
 /**
  * █████▒█      ██  ▄████▄   ██ ▄█▀       ██████╗ ██╗   ██╗ ██████╗
@@ -25,41 +28,31 @@ import javax.servlet.http.HttpSession;
  *
  * @author : Joe
  * @version : 1.0
- * @date : Created in 2020/07/22 18:26
+ * @date : Created in 2020/07/23 13:26
  * @description :
  */
 
 @Controller
-public class MessageController {
+public class TypeShowController {
 
     @Resource
-    private MessageService messageService;
+    private TypeService typeService;
 
-    @Value("${message.avatar}")
-    private String avatar;
+    @Resource
+    private BlogService blogService;
 
-    //显示留言页面
-    @GetMapping("/message")
-    public String message() {
-        return "message";
-    }
-
-    @GetMapping("/messagecomment")
-    public String messageComment(Model model){
-        model.addAttribute("messages",messageService.listMessage());
-        return "message::messageList";
-    }
-
-    @PostMapping("/message")
-    public String post(Message message, HttpSession session){
-        User user = (User) session.getAttribute("user");
-        if (user != null) {
-            message.setAvatar(user.getAvatar());
-            message.setAdminComment(true);
-        } else {
-            message.setAvatar(avatar);
+    @GetMapping("/types/{id}")
+    public String types(@PageableDefault(size = 5, sort = {"updateTime"}, direction = Sort.Direction.DESC) Pageable pageable,
+                        @PathVariable Long id, Model model) {
+        List<Type> types = typeService.listTypeTop(10000);
+        if (id == -1) {
+            id = types.get(0).getId();
         }
-        messageService.saveMessage(message);
-        return "redirect:/messagecomment";
+        BlogQuery blogQuery = new BlogQuery();
+        blogQuery.setTypeId(id);
+        model.addAttribute("types", types);
+        model.addAttribute("page", blogService.listBlog(pageable, blogQuery));
+        model.addAttribute("activeTypeId", id);
+        return "types";
     }
 }

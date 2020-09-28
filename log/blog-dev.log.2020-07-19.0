@@ -29,7 +29,7 @@
 2020-07-19 09:08:56.913  INFO 13492 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:08:56.914  INFO 13492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:08:56.922  INFO 13492 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-19 09:08:56.976  INFO 13492 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:08:56.976  INFO 13492 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:08:56.981  INFO 13492 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 09:11:20.259  INFO 19264 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 19264 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:11:20.261 DEBUG 19264 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -62,7 +62,7 @@
 2020-07-19 09:11:25.389  INFO 19264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:11:25.389  INFO 19264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:11:25.398  INFO 19264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-19 09:11:25.452  INFO 19264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:11:25.452  INFO 19264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:11:25.456  INFO 19264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 09:15:11.422  INFO 9620 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 9620 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:15:11.425 DEBUG 9620 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -95,11 +95,11 @@
 2020-07-19 09:15:17.416  INFO 9620 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:15:17.416  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:15:17.424  INFO 9620 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
-2020-07-19 09:15:17.476  INFO 9620 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:15:17.476  INFO 9620 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:15:17.481  INFO 9620 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-19 09:15:20.335  INFO 9620 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-19 09:15:20.335  INFO 9620 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-19 09:15:20.336  INFO 9620 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : blog
-2020-07-19 09:15:28.557  INFO 9620 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.archives', args = []}
+2020-07-19 09:15:28.557  INFO 9620 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/archives', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.archives', args = []}
 2020-07-19 09:15:28.558  INFO 9620 --- [http-nio-8080-exec-3] com.hsjnb.aspect.LogAspect               : Result : archives
 2020-07-19 09:24:05.969  INFO 18068 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18068 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:24:05.972 DEBUG 18068 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -132,9 +132,9 @@
 2020-07-19 09:34:40.866  INFO 18068 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:34:40.866  INFO 18068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:34:40.873  INFO 18068 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 09:34:40.929  INFO 18068 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:34:40.929  INFO 18068 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:34:40.933  INFO 18068 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-19 09:35:26.650  INFO 18068 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:35:26.650  INFO 18068 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:35:26.651  INFO 18068 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 09:37:13.523  INFO 6512 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 6512 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:37:13.525 DEBUG 6512 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -167,9 +167,9 @@
 2020-07-19 09:37:24.689  INFO 6512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:37:24.689  INFO 6512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:37:24.696  INFO 6512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 09:37:24.751  INFO 6512 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:37:24.751  INFO 6512 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:37:24.756  INFO 6512 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-19 09:37:33.619  INFO 6512 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.about', args = []}
+2020-07-19 09:37:33.619  INFO 6512 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.about', args = []}
 2020-07-19 09:37:33.620  INFO 6512 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : about
 2020-07-19 09:39:56.602  INFO 1148 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1148 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:39:56.604 DEBUG 1148 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -202,7 +202,7 @@
 2020-07-19 09:40:04.684  INFO 1148 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:40:04.684  INFO 1148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:40:04.691  INFO 1148 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 09:40:04.747  INFO 1148 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.about', args = []}
+2020-07-19 09:40:04.747  INFO 1148 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/about', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.about', args = []}
 2020-07-19 09:40:04.752  INFO 1148 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : about
 2020-07-19 09:40:45.649  INFO 11304 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 11304 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:40:45.652 DEBUG 11304 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -235,7 +235,7 @@
 2020-07-19 09:40:54.623  INFO 11304 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:40:54.623  INFO 11304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:40:54.632  INFO 11304 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
-2020-07-19 09:40:54.689  INFO 11304 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:40:54.689  INFO 11304 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:40:54.694  INFO 11304 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 09:47:17.793  INFO 16648 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 16648 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 09:47:17.795 DEBUG 16648 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -268,7 +268,7 @@
 2020-07-19 09:54:22.614  INFO 16648 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 09:54:22.614  INFO 16648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 09:54:22.625  INFO 16648 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
-2020-07-19 09:54:22.689  INFO 16648 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 09:54:22.689  INFO 16648 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 09:54:22.694  INFO 16648 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:00:05.935  INFO 13580 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 13580 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:00:05.967 DEBUG 13580 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -301,7 +301,7 @@
 2020-07-19 10:00:11.186  INFO 13580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:00:11.186  INFO 13580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:00:11.193  INFO 13580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 10:00:11.246  INFO 13580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:00:11.246  INFO 13580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:00:11.251  INFO 13580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:01:36.051  INFO 14580 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 14580 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:01:36.052 DEBUG 14580 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -334,7 +334,7 @@
 2020-07-19 10:01:41.811  INFO 14580 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:01:41.811  INFO 14580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:01:41.818  INFO 14580 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 10:01:41.871  INFO 14580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:01:41.871  INFO 14580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:01:41.875  INFO 14580 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:02:03.299  INFO 8008 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 8008 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:02:03.329 DEBUG 8008 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -395,7 +395,7 @@
 2020-07-19 10:02:54.657  INFO 13264 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:02:54.657  INFO 13264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:02:54.670  INFO 13264 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 13 ms
-2020-07-19 10:02:54.727  INFO 13264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:02:54.727  INFO 13264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:02:54.731  INFO 13264 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:03:19.992  INFO 13648 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 13648 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:03:19.994 DEBUG 13648 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -456,7 +456,7 @@
 2020-07-19 10:03:48.605  INFO 15608 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:03:48.605  INFO 15608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:03:48.612  INFO 15608 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 10:03:48.663  INFO 15608 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:03:48.663  INFO 15608 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:03:48.667  INFO 15608 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:04:37.029  INFO 13788 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 13788 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:04:37.056 DEBUG 13788 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -489,7 +489,7 @@
 2020-07-19 10:04:47.770  INFO 13788 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:04:47.770  INFO 13788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:04:47.777  INFO 13788 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 10:04:47.833  INFO 13788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:04:47.833  INFO 13788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:04:47.838  INFO 13788 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 10:16:50.179  INFO 11984 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 11984 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:16:50.181 DEBUG 11984 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -522,9 +522,9 @@
 2020-07-19 10:16:56.794  INFO 11984 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 10:16:56.795  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 10:16:56.802  INFO 11984 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 10:16:56.853  INFO 11984 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 10:16:56.853  INFO 11984 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 10:16:56.857  INFO 11984 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
-2020-07-19 10:17:02.649  INFO 11984 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.blog', args = []}
+2020-07-19 10:17:02.649  INFO 11984 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/blog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.blog', args = []}
 2020-07-19 10:17:02.650  INFO 11984 --- [http-nio-8080-exec-5] com.hsjnb.aspect.LogAspect               : Result : blog
 2020-07-19 10:42:09.173  INFO 15440 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 15440 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 10:42:09.175 DEBUG 15440 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -681,7 +681,7 @@
 2020-07-19 11:43:07.374  INFO 9032 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 11:43:07.374  INFO 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 11:43:07.381  INFO 9032 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 11:43:11.164  INFO 9032 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 11:43:11.164  INFO 9032 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 11:43:11.169  INFO 9032 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 12:22:49.828  INFO 19384 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 19384 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 12:22:49.839 DEBUG 19384 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -1729,7 +1729,7 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-19 12:36:32.359  WARN 13516 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2020-07-19 12:36:42.320  INFO 13516 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 12:36:42.320  INFO 13516 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 12:36:42.325  INFO 13516 --- [http-nio-8080-exec-9] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 12:38:37.254  INFO 6684 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 6684 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 12:38:37.283 DEBUG 6684 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE
@@ -1855,7 +1855,7 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2020-07-19 17:15:02.997  INFO 5260 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 17:15:02.998  INFO 5260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 17:15:03.005  INFO 5260 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
-2020-07-19 17:15:03.153  INFO 5260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 17:15:03.153  INFO 5260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 17:15:03.158  INFO 5260 --- [http-nio-8080-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 17:26:49.067  INFO 5260 --- [Thread-191] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2020-07-19 17:26:49.069  INFO 5260 --- [Thread-191] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
@@ -1969,7 +1969,7 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 	at java.lang.Thread.run(Thread.java:748)
 
 2020-07-19 17:29:17.875  WARN 16632 --- [http-nio-8080-exec-7] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2020-07-19 17:29:20.713  INFO 16632 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 17:29:20.713  INFO 16632 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 17:29:20.717  INFO 16632 --- [http-nio-8080-exec-8] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 17:29:53.940 ERROR 16632 --- [http-nio-8080-exec-5] c.h.handler.ControllerExceptionHandler   : Request URL : http://localhost:8080/admin/login,Exception : {}
 
@@ -2114,7 +2114,7 @@ org.springframework.web.HttpRequestMethodNotSupportedException: Request method '
 2020-07-19 19:47:31.354  INFO 14432 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
 2020-07-19 19:47:31.354  INFO 14432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
 2020-07-19 19:47:31.494  INFO 14432 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 140 ms
-2020-07-19 19:47:42.062  INFO 14432 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.web.IndexController.index', args = []}
+2020-07-19 19:47:42.062  INFO 14432 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost:8080/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = []}
 2020-07-19 19:47:42.068  INFO 14432 --- [http-nio-8080-exec-10] com.hsjnb.aspect.LogAspect               : Result : index
 2020-07-19 19:54:39.298  INFO 4652 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 4652 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
 2020-07-19 19:54:39.301 DEBUG 4652 --- [restartedMain] com.hsjnb.BlogApplication                : Running with Spring Boot v2.3.1.RELEASE, Spring v5.2.7.RELEASE

@@ -1,4 +1,4 @@
-package com.hsjnb.web;
+package com.hsjnb.controller;
 
 import com.hsjnb.service.FriendLinkService;
 import org.springframework.stereotype.Controller;
