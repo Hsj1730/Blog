@@ -1,7 +1,7 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.Blog;
-import com.hsjnb.po.User;
+import com.hsjnb.entity.Blog;
+import com.hsjnb.entity.User;
 import com.hsjnb.service.BlogService;
 import com.hsjnb.service.TagService;
 import com.hsjnb.service.TypeService;

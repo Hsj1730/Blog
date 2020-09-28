@@ -1,6 +1,6 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.FriendLink;
+import com.hsjnb.entity.FriendLink;
 import com.hsjnb.service.FriendLinkService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;

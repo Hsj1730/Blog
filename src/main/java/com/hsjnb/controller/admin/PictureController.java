@@ -1,6 +1,6 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.Picture;
+import com.hsjnb.entity.Picture;
 import com.hsjnb.service.PictureService;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;

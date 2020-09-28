@@ -1,6 +1,6 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.Tag;
+import com.hsjnb.entity.Tag;
 import com.hsjnb.service.TagService;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Pageable;

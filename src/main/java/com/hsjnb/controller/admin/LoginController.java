@@ -1,6 +1,6 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.User;
+import com.hsjnb.entity.User;
 import com.hsjnb.service.UserService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

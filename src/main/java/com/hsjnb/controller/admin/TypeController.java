@@ -1,6 +1,6 @@
-package com.hsjnb.web.admin;
+package com.hsjnb.controller.admin;
 
-import com.hsjnb.po.Type;
+import com.hsjnb.entity.Type;
 import com.hsjnb.service.TypeService;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
