@@ -1,0 +1,20 @@
+2021-01-14 16:49:26.868  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18240 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2021-01-14 16:49:26.874  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2021-01-14 16:49:30.874  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 4.437 seconds (JVM running for 5.524)
+2021-01-14 16:49:49.942  INFO 18240 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = [Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2021-01-14 16:49:50.679  WARN 18240 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-14 16:49:50.880  WARN 18240 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-01-14 16:49:51.290  INFO 18240 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
+2021-01-14 16:49:51.290  INFO 18240 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : ---------------doAfter---------------
+2021-01-14 16:49:51.851  INFO 18240 --- [http-nio-80-exec-7] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost/footer/newblog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.newblogs', args = [{}]}
+2021-01-14 16:49:52.426  INFO 18240 --- [http-nio-80-exec-7] com.hsjnb.aspect.LogAspect               : Result : _fragments :: newblogList
+2021-01-14 16:49:52.426  INFO 18240 --- [http-nio-80-exec-7] com.hsjnb.aspect.LogAspect               : ---------------doAfter---------------
+2021-01-14 16:51:14.779  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18240 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2021-01-14 16:51:14.779  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2021-01-14 16:51:16.689  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 1.943 seconds (JVM running for 111.338)
+2021-01-14 16:53:23.141  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 18240 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2021-01-14 16:53:23.141  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2021-01-14 16:53:25.548  INFO 18240 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 2.459 seconds (JVM running for 240.198)
+2021-01-14 16:53:39.720  INFO 532 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 532 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2021-01-14 16:53:39.722  INFO 532 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2021-01-14 16:53:43.728  INFO 532 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 4.443 seconds (JVM running for 5.588)

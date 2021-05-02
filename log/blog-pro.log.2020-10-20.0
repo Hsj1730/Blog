@@ -1,0 +1,3 @@
+2020-10-20 09:08:30.514  INFO 1248 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 1248 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2020-10-20 09:08:30.524  INFO 1248 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2020-10-20 09:08:36.609  INFO 1248 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 6.752 seconds (JVM running for 8.282)

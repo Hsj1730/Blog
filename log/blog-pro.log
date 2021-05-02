@@ -1,6 +1,85 @@
-2020-09-24 08:58:21.397  INFO 5644 --- [main] com.hsjnb.BlogApplicationTests           : Starting BlogApplicationTests on DESKTOP-J0QEJMK with PID 5644 (started by Joe in D:\Code\Java\Blog)
-2020-09-24 08:58:21.407  INFO 5644 --- [main] com.hsjnb.BlogApplicationTests           : The following profiles are active: pro
-2020-09-24 08:58:30.352  INFO 5644 --- [main] com.hsjnb.BlogApplicationTests           : Started BlogApplicationTests in 9.71 seconds (JVM running for 11.989)
-2020-09-24 09:08:11.562  INFO 17196 --- [main] com.hsjnb.BlogApplicationTests           : Starting BlogApplicationTests on DESKTOP-J0QEJMK with PID 17196 (started by Joe in D:\Code\Java\Blog)
-2020-09-24 09:08:11.563  INFO 17196 --- [main] com.hsjnb.BlogApplicationTests           : The following profiles are active: pro
-2020-09-24 09:08:18.674  INFO 17196 --- [main] com.hsjnb.BlogApplicationTests           : Started BlogApplicationTests in 7.599 seconds (JVM running for 8.942)
+2021-05-02 14:39:51.501  INFO 14832 --- [main] com.hsjnb.BlogApplicationTests           : Starting BlogApplicationTests on DESKTOP-J0QEJMK with PID 14832 (started by Joe in D:\Code\Java\Blog)
+2021-05-02 14:39:51.504  INFO 14832 --- [main] com.hsjnb.BlogApplicationTests           : The following profiles are active: pro
+2021-05-02 14:39:55.981 ERROR 14832 --- [task-1] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Exception during pool initialization.
+
+com.mysql.cj.jdbc.exceptions.CommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:197)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:138)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:358)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:206)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:477)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:560)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:115)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:112)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:122)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:180)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:68)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:35)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:101)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:237)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.id.factory.internal.DefaultIdentifierGeneratorFactory.injectServices(DefaultIdentifierGeneratorFactory.java:152)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.injectDependencies(AbstractServiceRegistryImpl.java:286)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:243)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:214)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:176)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:118)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1224)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1255)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:391)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:91)
+	at com.mysql.cj.NativeSession.connect(NativeSession.java:144)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:956)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 33 common frames omitted
+Caused by: java.net.UnknownHostException: hsjnb.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(InetAddress.java:929)
+	at java.net.InetAddress.getAddressesFromNameService(InetAddress.java:1324)
+	at java.net.InetAddress.getAllByName0(InetAddress.java:1277)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1193)
+	at java.net.InetAddress.getAllByName(InetAddress.java:1127)
+	at com.mysql.cj.protocol.StandardSocketFactory.connect(StandardSocketFactory.java:132)
+	at com.mysql.cj.protocol.a.NativeSocketConnection.connect(NativeSocketConnection.java:65)
+	... 36 common frames omitted
+
+2021-05-02 14:39:55.984  WARN 14832 --- [task-1] o.h.e.j.e.i.JdbcEnvironmentInitiator     : HHH000342: Could not obtain connection to query metadata : Communications link failure
+
+The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2021-05-02 14:39:59.001  INFO 14832 --- [main] com.hsjnb.BlogApplicationTests           : Started BlogApplicationTests in 7.861 seconds (JVM running for 8.659)
+2021-05-02 14:45:38.718  INFO 13804 --- [restartedMain] com.hsjnb.BlogApplication                : Starting BlogApplication on DESKTOP-J0QEJMK with PID 13804 (D:\Code\Java\Blog\target\classes started by Joe in D:\Code\Java\Blog)
+2021-05-02 14:45:38.720  INFO 13804 --- [restartedMain] com.hsjnb.BlogApplication                : The following profiles are active: pro
+2021-05-02 14:45:45.019  INFO 13804 --- [restartedMain] com.hsjnb.BlogApplication                : Started BlogApplication in 6.781 seconds (JVM running for 8.507)
+2021-05-02 14:45:55.238  INFO 13804 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost/', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.index', args = [Page request [number: 0, size 5, sort: updateTime: DESC], {}]}
+2021-05-02 14:45:55.968  WARN 13804 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-02 14:45:56.148  WARN 13804 --- [http-nio-80-exec-1] org.hibernate.orm.deprecation            : HHH90000016: Found use of deprecated 'collection property' syntax in HQL/JPQL query [t.blogs.size]; use collection function syntax instead [size(t.blogs)].
+2021-05-02 14:45:56.457  INFO 13804 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : Result : index
+2021-05-02 14:45:56.457  INFO 13804 --- [http-nio-80-exec-1] com.hsjnb.aspect.LogAspect               : ---------------doAfter---------------
+2021-05-02 14:45:57.072  INFO 13804 --- [http-nio-80-exec-9] com.hsjnb.aspect.LogAspect               : Request : {url = 'http://localhost/footer/newblog', ip = '0:0:0:0:0:0:0:1', classMethod = 'com.hsjnb.controller.IndexController.newblogs', args = [{}]}
+2021-05-02 14:45:57.502  INFO 13804 --- [http-nio-80-exec-9] com.hsjnb.aspect.LogAspect               : Result : _fragments :: newblogList
+2021-05-02 14:45:57.502  INFO 13804 --- [http-nio-80-exec-9] com.hsjnb.aspect.LogAspect               : ---------------doAfter---------------
